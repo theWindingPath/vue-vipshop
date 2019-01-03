@@ -1,15 +1,33 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
+import recommend from 'components/recommend/recommend' // 引入recommend组件
+import singer from 'components/singer/singer'
+import rank from 'components/rank/rank'
+import search from 'components/search/search'
 
-Vue.use(Router)
+Vue.use(Router) // 注册路由
 
-export default new Router({
-  routes: [
+export default new Router({ // 导出路由实例
+  routes: [ // 路由配置选项
     {
-      path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld
+      path: '/', // 根的router，刚进入页面
+      redirect: '/recommend' // 默认跳到这个页面
+    },
+    {
+      path: '/recommend', // 路由to对应的路径
+      component: recommend // 路由到对应的组件
+    },
+    {
+      path: '/singer',
+      component: singer
+    },
+    {
+      path: '/rank',
+      component: rank
+    },
+    {
+      path: '/search',
+      component: search
     }
   ]
 })

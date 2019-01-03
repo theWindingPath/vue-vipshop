@@ -35,7 +35,8 @@ module.exports = {
     extensions: ['.js', '.vue', '.json'],
     alias: {
       'src': resolve('src'),
-      'common': resolve('src/common') // 配置相对路径
+      'common': resolve('src/common'), // 配置相对路径
+      'components': resolve('src/components')
     }
   },
   module: {
