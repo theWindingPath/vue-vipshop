@@ -28,6 +28,7 @@ module.exports = {
     // allow debugger during development
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     'eol-last': 0,
-    'space-before-funtions-paren': 0 // 函数()前空格不写，不报错，忽略检查
+    'indent': 0, // eslint不检查缩进
+    'space-before-function-paren': 0 // 函数()前空格不写，不报错，忽略检查
   }
 }
