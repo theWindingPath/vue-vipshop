@@ -1,11 +1,15 @@
 <template>
   <div class="recommend">
     <div class="recommend-content">
-      <div class="slider-wrapper">
+      <!-- 因为在recommend组件的created里获取数据是异步过程，会有时间的延迟（0.几秒），但子组件slider的mounted会先(获取数据)执行，这时设置宽度是渲染不成功的 -->
+      <!-- 需要加v-if判断，等获取数据成功后，在引入子组件slider，这时子组件slider在设置宽度，就拿得到渲染好的dom了 -->
+      <div v-if="recommends.length" class="slider-wrapper">
+        <!-- 需要确保slider下的slot是有的，在子组件slider里的mounted设置元素宽度才会生效， -->
         <slider>
           <!-- v-for遍历recommends -->
           <!-- vue2.0使用v-for需要加上:key="item.id"，不然会有warning -->
-          <div class="slider-item" v-for="item in recommends" :key="item.id">
+          <!-- 在子组件手动添加  class="slider-item" 用js-->
+          <div v-for="item in recommends" :key="item.id">
             <!-- :href动态绑定， a标签跳转链接 -->
             <a :href="item.linkUrl">
               <img :src="item.picUrl">
