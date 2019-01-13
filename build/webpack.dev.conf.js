@@ -9,6 +9,8 @@ const CopyWebpackPlugin = require('copy-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const FriendlyErrorsPlugin = require('friendly-errors-webpack-plugin')
 const portfinder = require('portfinder')
+const bodyParser = require('body-parser')
+const axios = require('axios')
 
 const HOST = process.env.HOST
 const PORT = process.env.PORT && Number(process.env.PORT)
@@ -22,6 +24,26 @@ const devWebpackConfig = merge(baseWebpackConfig, {
 
   // these devServer options should be customized in /config/index.js
   devServer: {
+    // 后端代理，转发ajax请求
+    before(app) {
+      app.use(bodyParser.urlencoded({extended: true}))
+      const querystring = require('querystring')
+
+      app.get('/api/getDiscList', function(req, res) { // 在前端部分，可以用axios.get('/api/getDiscList')获得下面res.json(data)的数据
+        const url = 'https://c.y.qq.com/splcloud/fcgi-bin/fcg_get_diss_by_tag.fcg'
+        axios.get(url, { // axios再node里发送的是http请求
+          headers: {
+            referer: 'https://c.y.qq.com/', // 和qq音乐的referer相同
+            host: 'c.y.qq.com'
+          },
+          params: req.query
+        }).then((response) => { // 请求成功返回response（qq音乐歌单数据）
+          res.json(response.data) // 从qq音乐服务器返回歌单数据的data部分通过res.json()传给前端
+        }).catch((e) => {
+          console.log(e)
+        })
+      })
+    },
     clientLogLevel: 'warning',
     historyApiFallback: {
       rewrites: [

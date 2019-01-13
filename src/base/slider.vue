@@ -104,7 +104,7 @@ export default {
 
           // 监听滚动结束动作，绑定圆点当前高亮
           this.slider.on('scrollEnd', () => {
-            console.log('触发时机：滚动结束。')
+            // console.log('触发时机：滚动结束。')
             // 滚动结束后，获得当前页面 getCurrentPage()，作用：获取当前页面的信息，pageX 和 pageY 表示横轴方向和纵轴方向的页面数。
             let pageIndex = this.slider.getCurrentPage().pageX // 返回当前页面的值（第几页）
             // console.log(pageIndex) // 因为左右各克隆一页，需要减1

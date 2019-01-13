@@ -22,7 +22,7 @@
 </template>
 
 <script type="text/ecmascript-6">
-  import {getRecommend} from 'api/recommend' // 引入获取歌单轮播图数据方法
+  import {getRecommend, getDiscList} from 'api/recommend' // 引入获取歌单轮播图数据方法
   import {ERR_0K} from 'api/config' // 引入错误标识符 常量为0
   import Slider from 'base/slider' // 引入slider组件
 
@@ -34,6 +34,7 @@
     },
     created() { // 在 created 钩子函数获取数据
       this._getRecommend()
+      this._getDiscList()
     },
     methods: { // 封装一些方法
       _getRecommend() {
@@ -42,6 +43,13 @@
           if (res.code === ERR_0K) { // 成功返回标识符 code为0
             // console.log(res.data.slider) // 打印返回数据
             this.recommends = res.data.slider // 赋值
+          }
+        })
+      },
+      _getDiscList() {
+        getDiscList().then((res) => {
+          if (res.code === ERR_0K) {
+            console.log(res)
           }
         })
       }

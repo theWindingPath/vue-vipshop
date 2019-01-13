@@ -1,5 +1,6 @@
 import jsonp from 'common/js/jsonp' // 引入jsonp.js 导出的方法，
 import {commonParams, options} from './config' // 从config.js引入两个参数，es6语法
+import axios from 'axios'
 
 // 封装方法 抓取线上数据
 export function getRecommend() {
@@ -16,4 +17,27 @@ export function getRecommend() {
     // 调用我们封装好的jsonp函数（jsonp.js里的），它返回一个promise对象
     // 这里函数返回一个promise对象
     return jsonp(url, data, options)
+}
+
+// 获取歌单数据
+export function getDiscList() {
+    const url = '/api/getDiscList'
+
+    const data = Object.assign({}, commonParams, { // 合并参数（通用参数、自定义参数）到一个对象上
+        platform: 'yqq',
+        hostUin: 0,
+        sin: 0,
+        ein: 29,
+        sortId: 5,
+        needNewCode: 0,
+        categoryId: 10000000,
+        rnd: Math.random(),
+        format: 'json'
+    })
+
+    return axios.get(url, { // axios会自动将params的参数拼接到url上
+        params: data
+    }).then((res) => {
+        return Promise.resolve(res.data) // 返回一个promise对象(数据在then())
+    })
 }
