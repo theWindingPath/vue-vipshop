@@ -1,9 +1,10 @@
 // export一些公共参数
 export const commonParams = { // 这里定义一些通用参数，不用每个请求都要写的一些相同的参数
     // 每个请求相同的参数， 参数尽量的模拟的和qq音乐的一样
-    g_tk: 5381,
-    inChartset: 'utf-8',
-    outChartset: 'utf-8',
+    g_tk: 1928093487,
+    // inChartset: 'utf-8' 错误写法，多了一个t
+    inCharset: 'utf-8',
+    outCharset: 'utf-8',
     notice: 0,
     format: 'jsonp'
 }

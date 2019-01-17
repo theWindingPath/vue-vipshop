@@ -34,7 +34,8 @@ const devWebpackConfig = merge(baseWebpackConfig, {
         axios.get(url, { // axios再node里发送的是http请求
           headers: {
             referer: 'https://c.y.qq.com/', // 和qq音乐的referer相同
-            host: 'c.y.qq.com'
+            host: 'c.y.qq.com',
+            'Content-Type': 'application/json;charset=UTF-8'
           },
           params: req.query
         }).then((response) => { // 请求成功返回response（qq音乐歌单数据）
