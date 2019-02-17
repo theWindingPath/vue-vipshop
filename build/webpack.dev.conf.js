@@ -12,6 +12,10 @@ const portfinder = require('portfinder')
 const bodyParser = require('body-parser')
 const axios = require('axios')
 
+// 从slider.json里获取数据
+var appData = require('../src/data/slider.json')
+var sliderData = appData.slider
+
 const HOST = process.env.HOST
 const PORT = process.env.PORT && Number(process.env.PORT)
 
@@ -42,6 +46,14 @@ const devWebpackConfig = merge(baseWebpackConfig, {
           res.json(response.data) // 从qq音乐服务器返回歌单数据的data部分通过res.json()传给前端
         }).catch((e) => {
           console.log(e)
+        })
+      })
+
+      // 唯品会mock轮播图数据
+      app.get('/api/getSlider', function(req, res) {
+        res.json({
+          error: 0,
+          data: sliderData
         })
       })
     },

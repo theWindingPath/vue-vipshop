@@ -35,7 +35,7 @@ export default {
       },
       interval: { // 轮播间隔
           type: Number,
-          default: 2000 // 毫秒 (默认值)
+          default: 3000 // 毫秒 (默认值)
       }
     },
     mounted() { // 在mounted钩子里初始化better-scroll，slider组件dom渲染好，
@@ -160,6 +160,7 @@ export default {
         box-sizing border-box
         overflow hidden
         text-align center
+        padding 0 30px
         a
           display block
           width 100%
@@ -170,10 +171,10 @@ export default {
             width 100%
     .dots
       position absolute // 用relative 会掉到底部，bottom 12px 不起作用？？
-      left 0 // relative是相对浏览器定位，则dots相对于正常文本流定位，
-      right 0 // 用absolute则是找最近有relative的父节点，这里是recommend组件里的slider-wrapper
+      // left 0 // relative是相对浏览器定位，则dots相对于正常文本流定位，
+      right 42px // 用absolute则是找最近有relative的父节点，这里是recommend组件里的slider-wrapper
       bottom 12px
-      text-align center
+      // text-align center
       font-size 0
       .dot
         display inline-block
@@ -183,8 +184,10 @@ export default {
         border-radius 50%
         background-color $color-text-l
         &.active
-          width 20px // 高亮样式 变宽
-          border-radius 5px // 变方
-          background-color $color-text-ll // 变亮
+          // width 20px // 高亮样式 变宽
+          // border-radius 5px // 变方
+          // background-color $color-text-ll // 变亮
+          // background-color #455164
+          background-color $color-background
 
 </style>

@@ -20,7 +20,7 @@
             </div>
           </slider>
         </div>
-        <div class="recommend-list">
+        <!-- <div class="recommend-list">
           <h1 class="list-title">热门歌单推荐</h1>
           <ul>
             <li v-for="item in discList" :key="item.id" class="item">
@@ -33,6 +33,21 @@
               </div>
             </li>
           </ul>
+        </div> -->
+        <!-- 唯品会旗舰店brand数据 -->
+        <div class="recommend-list">
+          <h1 class="list-title">热门旗舰店推荐</h1>
+          <ul>
+            <li v-for="item in brandList" :key="item.id" class="item">
+              <div class="avater">
+                <img width="60" height="60" :src="item.small_image">
+              </div>
+              <div class="text">
+                <h2 class="name" v-html="item.product_name"></h2>
+                <p class="desc" v-html="item.brand_name"></p>
+              </div>
+            </li>
+          </ul>
         </div>
       </div>
     </scroll>
@@ -40,7 +55,7 @@
 </template>
 
 <script type="text/ecmascript-6">
-  import {getRecommend, getDiscList} from 'api/recommend' // 引入获取歌单轮播图数据方法
+  import {getRecommend, getDiscList, getDailyRecomd, getSlider, getBrand, getBrandLanmiu} from 'api/recommend' // 引入获取歌单轮播图数据方法
   import {ERR_0K} from 'api/config' // 引入错误标识符 常量为0
   import Slider from 'base/slider' // 引入slider组件
   import Scroll from 'base/scroll'
@@ -49,16 +64,28 @@
     data() {
       return {
         recommends: [], // 存放轮播图数据的数组，初始化为空数组
-        discList: [] // 歌单数据
+        discList: [], // 歌单数据
+        brandList: [] // 旗舰店数据s
       }
     },
     created() { // 在 created 钩子函数获取数据
       // 模拟延迟，延迟2秒获取轮播图数据
       setTimeout(() => {
-        this._getRecommend()
+        // this._getRecommend()
       }, 2000)
       // this._getRecommend()
       this._getDiscList()
+
+      // this._getDailyRecomd() // has been blocked by CORS policy: The 'Access-Control-Allow-Origin' header has a value 'https://m.vip.com' that is not equal to the supplied origin.
+
+      // 获取唯品会mock轮播图数据
+      this._getSlider()
+
+      // 爱慕希旗舰店
+      // this._getBrand()
+
+      // 兰缪
+      this._getBrandLanmiu()
     },
     methods: { // 封装一些方法
       _getRecommend() {
@@ -66,7 +93,23 @@
         getRecommend().then((res) => { // res参数接收 返回的数据
           if (res.code === ERR_0K) { // 成功返回标识符 code为0
             // console.log(res.data.slider) // 打印返回数据
-            this.recommends = res.data.slider // 赋值
+            // this.recommends = res.data.slider // 赋值
+          }
+        })
+      },
+      _getBrand() {
+        getBrand().then((res) => {
+          if (res.code === 1) {
+            console.log(res.data)
+            this.brandList = res.data
+          }
+        })
+      },
+      _getBrandLanmiu() { // 兰缪
+        getBrandLanmiu().then((res) => {
+          if (res.code === 1) {
+            console.log(res.data)
+            this.brandList = res.data
           }
         })
       },
@@ -75,6 +118,23 @@
           if (res.code === ERR_0K) {
             // console.log(res)
             this.discList = res.data.list
+          }
+        })
+      },
+      _getDailyRecomd() {
+        getDailyRecomd().then((res) => {
+          if (res.code === 1) {
+            console.log(res)
+          }
+        })
+      },
+      _getSlider() {
+        getSlider().then((res) => {
+          // console.log(111)
+          // console.log(res)
+          if (res.error === ERR_0K) {
+            // console.log(res)
+            this.recommends = res.data
           }
         })
       },
@@ -105,6 +165,7 @@
   position fixed
   width 100%
   top 88px
+  // top 100px
   bottom 0
   .recommend-content
     height 100%
@@ -112,6 +173,7 @@
     .slider-wrapper
       position relative
       width 100%
+      top 12px
       overflow hidden
     .recommend-list
       .list-title
@@ -141,6 +203,7 @@
             color $color-text
             margin-bottom 10px
           .desc
-            color $color-text-d
+            // color $color-text-d
+            color $color-text-l
 
 </style>
