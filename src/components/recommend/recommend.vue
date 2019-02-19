@@ -1,6 +1,6 @@
 <template>
   <div class="recommend">
-    <scroll ref="scroll" class="recommend-content" :data="discList">
+    <scroll ref="scroll" class="recommend-content" :data="brandList">
       <!-- 因为在recommend组件的created里获取数据是异步过程，会有时间的延迟（0.几秒），但子组件slider的mounted会先(获取数据)执行，这时设置宽度是渲染不成功的 -->
       <!-- 需要加v-if判断，等获取数据成功后，在引入子组件slider，这时子组件slider在设置宽度，就拿得到渲染好的dom了 -->
       <div>
@@ -20,20 +20,6 @@
             </div>
           </slider>
         </div>
-        <!-- <div class="recommend-list">
-          <h1 class="list-title">热门歌单推荐</h1>
-          <ul>
-            <li v-for="item in discList" :key="item.id" class="item">
-              <div class="avater">
-                <img width="60" height="60" :src="item.imgurl">
-              </div>
-              <div class="text">
-                <h2 class="name" v-html="item.creator.name"></h2>
-                <p class="desc" v-html="item.dissname"></p>
-              </div>
-            </li>
-          </ul>
-        </div> -->
         <!-- 唯品会旗舰店brand数据 -->
         <div class="recommend-list">
           <!-- <h1 class="list-title">热门旗舰店推荐</h1> -->
@@ -41,8 +27,6 @@
           <ul>
             <li v-for="item in brandList" :key="item.id" class="item">
               <div class="avater">
-                <!-- <img width="60" height="60" :src="item.brand_bg_logo"> -->
-                <!-- <img width="100%" height="100%" :src="item.brand_bg_logo"> -->
                 <img width="100%" height="180" v-lazy="item.brand_bg_logo">
               </div>
               <div class="text">
@@ -58,21 +42,24 @@
           <div class="line"></div>
         </div>
       </div>
+      <div class="loading-wrapper" v-show="!brandList.length">
+        <loading></loading>
+      </div>
     </scroll>
   </div>
 </template>
 
 <script type="text/ecmascript-6">
-  import {getRecommend, getDiscList, getDailyRecomd, getSlider, getBrand, getBrandLanmiu, getRecommendShop} from 'api/recommend' // 引入获取歌单轮播图数据方法
+  import {getSlider, getRecommendShop} from 'api/recommend' // 引入获取歌单轮播图数据方法
   import {ERR_0K} from 'api/config' // 引入错误标识符 常量为0
-  import Slider from 'base/slider' // 引入slider组件
-  import Scroll from 'base/scroll'
+  import Slider from 'base/slider/slider' // 引入slider组件
+  import Scroll from 'base/scroll/scroll'
+  import Loading from 'base/loading/loading'
 
   export default {
     data() {
       return {
         recommends: [], // 存放轮播图数据的数组，初始化为空数组
-        discList: [], // 歌单数据
         brandList: [] // 旗舰店数据s
       }
     },
@@ -81,64 +68,14 @@
       setTimeout(() => {
         // this._getRecommend()
       }, 2000)
-      // this._getRecommend()
-      // this._getDiscList()
-
-      // this._getDailyRecomd() // has been blocked by CORS policy: The 'Access-Control-Allow-Origin' header has a value 'https://m.vip.com' that is not equal to the supplied origin.
 
       // 获取唯品会mock轮播图数据
       this._getSlider()
-
-      // 爱慕希旗舰店
-      // this._getBrand()
-
-      // 兰缪
-      // this._getBrandLanmiu()
 
       // 热门旗舰店数据
       this._getRecommendShop()
     },
     methods: { // 封装一些方法
-      _getRecommend() {
-        // 调用获取数据方法，返回promise对象，在then() 里获取返回数据
-        getRecommend().then((res) => { // res参数接收 返回的数据
-          if (res.code === ERR_0K) { // 成功返回标识符 code为0
-            // console.log(res.data.slider) // 打印返回数据
-            // this.recommends = res.data.slider // 赋值
-          }
-        })
-      },
-      _getBrand() {
-        getBrand().then((res) => {
-          if (res.code === 1) {
-            console.log(res.data)
-            this.brandList = res.data
-          }
-        })
-      },
-      _getBrandLanmiu() { // 兰缪
-        getBrandLanmiu().then((res) => {
-          if (res.code === 1) {
-            // console.log(res.data)
-            // this.brandList = res.data
-          }
-        })
-      },
-      _getDiscList() {
-        getDiscList().then((res) => {
-          if (res.code === ERR_0K) {
-            // console.log(res)
-            this.discList = res.data.list
-          }
-        })
-      },
-      _getDailyRecomd() {
-        getDailyRecomd().then((res) => {
-          if (res.code === 1) {
-            console.log(res)
-          }
-        })
-      },
       _getSlider() {
         getSlider().then((res) => {
           // console.log(111)
@@ -172,7 +109,8 @@
     },
     components: {
       Slider, // 注册组件
-      Scroll
+      Scroll,
+      Loading
     }
   }
 </script>
@@ -248,5 +186,10 @@
         padding 0 12px
         color #aaa
         font-size 12px
+    .loading-wrapper
+      position absolute
+      width 100%
+      top 50%
+      transform translateY(-50%)
 
 </style>
