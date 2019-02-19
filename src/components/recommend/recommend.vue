@@ -36,18 +36,26 @@
         </div> -->
         <!-- 唯品会旗舰店brand数据 -->
         <div class="recommend-list">
-          <h1 class="list-title">热门旗舰店推荐</h1>
+          <!-- <h1 class="list-title">热门旗舰店推荐</h1> -->
+          <h1 class="list-title">-每天早10点 - 晚8点上新-</h1>
           <ul>
             <li v-for="item in brandList" :key="item.id" class="item">
               <div class="avater">
-                <img width="60" height="60" :src="item.small_image">
+                <!-- <img width="60" height="60" :src="item.brand_bg_logo"> -->
+                <!-- <img width="100%" height="100%" :src="item.brand_bg_logo"> -->
+                <img width="100%" height="180" v-lazy="item.brand_bg_logo">
               </div>
               <div class="text">
-                <h2 class="name" v-html="item.product_name"></h2>
-                <p class="desc" v-html="item.brand_name"></p>
+                <h2 class="name" v-html="item.brand_name"></h2>
+                <p class="desc" v-html="item.promotion_discount"></p>
               </div>
             </li>
           </ul>
+        </div>
+        <div class="bottom-tips">
+          <div class="line"></div>
+          <div class="text">我是有底线的</div>
+          <div class="line"></div>
         </div>
       </div>
     </scroll>
@@ -55,7 +63,7 @@
 </template>
 
 <script type="text/ecmascript-6">
-  import {getRecommend, getDiscList, getDailyRecomd, getSlider, getBrand, getBrandLanmiu} from 'api/recommend' // 引入获取歌单轮播图数据方法
+  import {getRecommend, getDiscList, getDailyRecomd, getSlider, getBrand, getBrandLanmiu, getRecommendShop} from 'api/recommend' // 引入获取歌单轮播图数据方法
   import {ERR_0K} from 'api/config' // 引入错误标识符 常量为0
   import Slider from 'base/slider' // 引入slider组件
   import Scroll from 'base/scroll'
@@ -74,7 +82,7 @@
         // this._getRecommend()
       }, 2000)
       // this._getRecommend()
-      this._getDiscList()
+      // this._getDiscList()
 
       // this._getDailyRecomd() // has been blocked by CORS policy: The 'Access-Control-Allow-Origin' header has a value 'https://m.vip.com' that is not equal to the supplied origin.
 
@@ -85,7 +93,10 @@
       // this._getBrand()
 
       // 兰缪
-      this._getBrandLanmiu()
+      // this._getBrandLanmiu()
+
+      // 热门旗舰店数据
+      this._getRecommendShop()
     },
     methods: { // 封装一些方法
       _getRecommend() {
@@ -108,8 +119,8 @@
       _getBrandLanmiu() { // 兰缪
         getBrandLanmiu().then((res) => {
           if (res.code === 1) {
-            console.log(res.data)
-            this.brandList = res.data
+            // console.log(res.data)
+            // this.brandList = res.data
           }
         })
       },
@@ -135,6 +146,14 @@
           if (res.error === ERR_0K) {
             // console.log(res)
             this.recommends = res.data
+          }
+        })
+      },
+      _getRecommendShop() {
+        getRecommendShop().then((res) => {
+          if (res.error === ERR_0K) {
+            console.log(res)
+            this.brandList = res.data
           }
         })
       },
@@ -176,34 +195,58 @@
       top 12px
       overflow hidden
     .recommend-list
+      margin-top 24px
+      background-color #f3f4f5
       .list-title
-        height 65px
-        line-height 65px
+        // height 65px
+        // line-height 65px
+        height 40px
+        line-height 40px
         text-align center
         color $color-theme
         font-size $font-size-medium
       .item
-        display flex
+        // display flex
         box-sizing border-box
-        align-items center
+        // align-items center
         padding 0 20px 20px 20px
         .avater
-          flex 0 0 60px
-          width 60px
-          padding-right 20px
+          // flex 0 0 60px
+          // width 60px
+          width 100%
+          // padding-right 20px
         .text
           display flex
           flex-direction column
           justify-content center
-          line-height 20px
-          flex 1
+          // line-height 20px
+          line-height 26px
+          // flex 1
           overflow hidden
+          padding-left 10px
           font-size $font-size-medium
+          background-color #fff
           .name
             color $color-text
-            margin-bottom 10px
+            font-weight 800
           .desc
             // color $color-text-d
-            color $color-text-l
+            color $color-theme
+            font-size $font-size-small
+    .bottom-tips
+      display flex
+      margin 0 auto
+      width 60%
+      height 60px
+      line-height 60px
+      .line
+        flex 1
+        position relative
+        top -30px
+        border-bottom 1px solid #ddd
+      .text
+        padding 0 12px
+        color #aaa
+        font-size 12px
 
 </style>

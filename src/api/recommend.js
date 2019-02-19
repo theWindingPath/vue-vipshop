@@ -126,3 +126,11 @@ export function getSlider() {
         return Promise.resolve(res.data)
     })
 }
+
+export function getRecommendShop() {
+    const url = '/api/getRecommend'
+
+    return axios.get(url).then((res) => {
+        return Promise.resolve(res.data)
+    })
+}

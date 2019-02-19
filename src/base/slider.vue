@@ -179,8 +179,10 @@ export default {
       .dot
         display inline-block
         margin 0 4px
-        height 8px
-        width 8px
+        // height 8px
+        // width 8px
+        height 6px
+        width 6px
         border-radius 50%
         background-color $color-text-l
         &.active

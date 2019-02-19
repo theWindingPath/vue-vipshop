@@ -15,6 +15,9 @@ const axios = require('axios')
 // 从slider.json里获取数据
 var appData = require('../src/data/slider.json')
 var sliderData = appData.slider
+// 获取recommend数据
+var recData = require('../src/data/recommend.json')
+var recommendData = recData.recommend
 
 const HOST = process.env.HOST
 const PORT = process.env.PORT && Number(process.env.PORT)
@@ -54,6 +57,13 @@ const devWebpackConfig = merge(baseWebpackConfig, {
         res.json({
           error: 0,
           data: sliderData
+        })
+      })
+      // 热门旗舰店数据mock
+      app.get('/api/getRecommend', function(req, res) {
+        res.json({
+          error: 0,
+          data: recommendData
         })
       })
     },
