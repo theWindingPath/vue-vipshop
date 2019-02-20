@@ -4,11 +4,11 @@
       <router-link tag="div" to="/recommend" class="tab-item">
         <span class="tab-link">今日推荐</span>
       </router-link>
-      <router-link tag="div" to="/singer" class="tab-item">
-        <span class="tab-link">旗舰店</span>
+      <router-link tag="div" to="/flagshipStore" class="tab-item">
+        <span class="tab-link">分类</span>
       </router-link>
       <router-link tag="div" to="/rank" class="tab-item">
-        <span class="tab-link">最后疯抢</span>
+        <span class="tab-link">旗舰店</span>
       </router-link>
       <router-link tag="div" to="/search" class="tab-item">
         <span class="tab-link">搜索</span>

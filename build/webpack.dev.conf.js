@@ -18,6 +18,9 @@ var sliderData = appData.slider
 // 获取recommend数据
 var recData = require('../src/data/recommend.json')
 var recommendData = recData.recommend
+// 获取旗舰店flagshipStore数据mock
+var flagData= require('../src/data/flagshipStore.json')
+var flagshipData = flagData.flagshipStore
 
 const HOST = process.env.HOST
 const PORT = process.env.PORT && Number(process.env.PORT)
@@ -64,6 +67,13 @@ const devWebpackConfig = merge(baseWebpackConfig, {
         res.json({
           error: 0,
           data: recommendData
+        })
+      })
+      // 旗舰店数据
+      app.get('/api/getFlagshipStore', function(req, res) {
+        res.json({
+          error: 0,
+          data: flagshipData
         })
       })
     },

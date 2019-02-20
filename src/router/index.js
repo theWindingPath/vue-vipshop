@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import recommend from 'components/recommend/recommend' // 引入recommend组件
-import singer from 'components/singer/singer'
+import flagshipStore from 'components/flagshipStore/flagshipStore'
 import rank from 'components/rank/rank'
 import search from 'components/search/search'
 
@@ -18,8 +18,8 @@ export default new Router({ // 导出路由实例
       component: recommend // 路由到对应的组件
     },
     {
-      path: '/singer',
-      component: singer
+      path: '/flagshipStore',
+      component: flagshipStore
     },
     {
       path: '/rank',

@@ -1,5 +1,5 @@
 <template>
-  <div class="rank">i am rank</div>
+  <div class="rank">i am 旗舰店</div>
 </template>
 
 <script type="text/ecmascript-6">
