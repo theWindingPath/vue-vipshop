@@ -4,6 +4,7 @@ import recommend from 'components/recommend/recommend' // 引入recommend组件
 import flagshipStore from 'components/flagshipStore/flagshipStore'
 import rank from 'components/rank/rank'
 import search from 'components/search/search'
+import StoreDetail from 'components/store-detail/store-detail'
 
 Vue.use(Router) // 注册路由
 
@@ -19,7 +20,13 @@ export default new Router({ // 导出路由实例
     },
     {
       path: '/flagshipStore',
-      component: flagshipStore
+      component: flagshipStore,
+      children: [ // 子路由
+        {
+          path: ':id', // 动态路由
+          component: StoreDetail
+        }
+      ]
     },
     {
       path: '/rank',

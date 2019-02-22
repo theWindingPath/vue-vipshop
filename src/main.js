@@ -4,6 +4,7 @@ import App from './App'
 import router from './router' // 这个router是 router目录下的index.js文件 export default出来的路由实例(new Router)
 import fastclick from 'fastclick' // 移动端点击，延迟300毫秒
 import VueLazyload from 'vue-lazyload'
+import store from './store'
 
 import 'common/stylus/index.styl' // 在webpack.base文件里配置相对路径
 
@@ -17,5 +18,6 @@ Vue.use(VueLazyload, {
 new Vue({
   el: '#app',
   router, // 挂载路由router实例
+  store,
   render: h => h(App)
 })

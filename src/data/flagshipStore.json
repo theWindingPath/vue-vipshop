@@ -52,12 +52,22 @@
             ]
         },
         {
-            "title": "女装",
+            "title": "户外运动",
             "brand": [
                 {
-                    "brand_id": "",
-                    "brand_name": "",
-                    "brand_logo": ""
+                    "brand_id": "3574150",
+                    "brand_name": "NBA",
+                    "brand_logo": "https://h2.appsimg.com/b.appsimg.com/upload/momin/2018/08/28/105/1535442959281_1035x336_80.jpg"
+                },
+                {
+                    "brand_id": "2602115",
+                    "brand_name": "阿迪达斯",
+                    "brand_logo": "https://h2.appsimg.com/b.appsimg.com/upload/momin/2018/08/23/164/1535011524132_1035x336_80.jpg"
+                },
+                {
+                    "brand_id": "3767670",
+                    "brand_name": "安踏",
+                    "brand_logo": "https://h2.appsimg.com/b.appsimg.com/upload/momin/2018/11/13/147/1542104089279_1035x336_80.jpg"
                 }
             ]
         },
@@ -65,9 +75,24 @@
             "title": "唯品生活",
             "brand": [
                 {
-                    "brand_id": "",
-                    "brand_name": "",
-                    "brand_logo": ""
+                    "brand_id": "3298650",
+                    "brand_name": "恒寿堂",
+                    "brand_logo": "https://h2.appsimg.com/b.appsimg.com/upload/momin/2018/08/21/153/1534842931296_1035x336_80.jpg"
+                },
+                {
+                    "brand_id": "2625382",
+                    "brand_name": "南国",
+                    "brand_logo": "https://h2.appsimg.com/b.appsimg.com/upload/momin/2018/04/13/6/1523603679581_1035x336_80.jpg"
+                },           
+                {
+                    "brand_id": "2020809",
+                    "brand_name": "洽洽",
+                    "brand_logo": "https://h2.appsimg.com/b.appsimg.com/upload/momin/2018/02/23/36/1519354739577_1035x336_80.jpg"
+                },
+                {
+                    "brand_id": "1861158",
+                    "brand_name": "汤臣倍健",
+                    "brand_logo": "https://h2.appsimg.com/b.appsimg.com/2017/08/10/429/1502359395900_1035x336_80.jpg"
                 }
             ]
         },
@@ -75,29 +100,39 @@
             "title": "美妆",
             "brand": [
                 {
-                    "brand_id": "",
-                    "brand_name": "",
-                    "brand_logo": ""
+                    "brand_id": "3766772",
+                    "brand_name": "玉兰油",
+                    "brand_logo": "https://h2.appsimg.com/b.appsimg.com/2017/08/09/569/1502264620256_1035x336_80.jpg"
+                },
+                {
+                    "brand_id": "2223844",
+                    "brand_name": "SK-II",
+                    "brand_logo": "https://h2.appsimg.com/b.appsimg.com/2017/08/09/307/1502263808150_1035x336_80.jpg"
+                },
+                {
+                    "brand_id": "1853324",
+                    "brand_name": "欧莱雅",
+                    "brand_logo": "https://h2.appsimg.com/b.appsimg.com/2017/09/04/787/1504532205810_1035x336_80.jpg"
                 }
             ]
         },
         {
-            "title": "精品",
+            "title": "唯品国际",
             "brand": [
                 {
-                    "brand_id": "",
-                    "brand_name": "",
-                    "brand_logo": ""
-                }
-            ]
-        },
-        {
-            "title": "户外运动",
-            "brand": [
+                    "brand_id": "3533069",
+                    "brand_name": "妮维雅",
+                    "brand_logo": "https://h2.appsimg.com/b.appsimg.com/upload/momin/2018/04/02/54/1522670680103_1035x336_80.jpg"
+                },
                 {
-                    "brand_id": "",
-                    "brand_name": "",
-                    "brand_logo": ""
+                    "brand_id": "3472261",
+                    "brand_name": "瑞典丽贝乐",
+                    "brand_logo": "https://h2.appsimg.com/b.appsimg.com/upload/momin/2018/11/23/159/1542963361400_1035x336_80.jpg"
+                },
+                {
+                    "brand_id": "3630169",
+                    "brand_name": "Lego乐高",
+                    "brand_logo": "https://h2.appsimg.com/b.appsimg.com/upload/momin/2018/10/26/146/1540543796487_1035x336_80.jpg"
                 }
             ]
         },
@@ -105,9 +140,109 @@
             "title": "内衣",
             "brand": [
                 {
-                    "brand_id": "",
-                    "brand_name": "",
-                    "brand_logo": ""
+                    "brand_id": "3489759",
+                    "brand_name": "安莉芳",
+                    "brand_logo": "https://h2.appsimg.com/b.appsimg.com/upload/momin/2018/12/05/33/1544009111947_1035x336_80.jpg"
+                },
+                {
+                    "brand_id": "3489868",
+                    "brand_name": "爱美丽",
+                    "brand_logo": "https://h2.appsimg.com/b.appsimg.com/upload/momin/2019/02/19/67/1550573007898_1035x336_80.jpg"
+                },
+                {
+                    "brand_id": "3489862",
+                    "brand_name": "爱慕",
+                    "brand_logo": "https://h2.appsimg.com/b.appsimg.com/upload/momin/2019/02/19/191/1550573041433_1035x336_80.jpg"
+                },
+                {
+                    "brand_id": "3540302",
+                    "brand_name": "黛安芬",
+                    "brand_logo": "https://h2.appsimg.com/b.appsimg.com/upload/momin/2018/10/16/119/1539693301708_1035x336_80.png"
+                },
+                {
+                    "brand_id": "3574419",
+                    "brand_name": "香港鳄鱼恤",
+                    "brand_logo": "https://h2.appsimg.com/b.appsimg.com/upload/momin/2018/11/12/169/1541993510333_1035x336_80.jpg"
+                }
+            ]
+        },
+        {
+            "title": "女装",
+            "brand": [
+                {
+                    "brand_id": "3479688",
+                    "brand_name": "艾维",
+                    "brand_logo": "https://h2.appsimg.com/b.appsimg.com/upload/momin/2018/09/30/83/1538302136753_1035x336_80.jpg"
+                },
+                {
+                    "brand_id": "3603242",
+                    "brand_name": "德玛纳",
+                    "brand_logo": "https://h2.appsimg.com/b.appsimg.com/upload/momin/2018/10/23/63/1540265697877_1035x336_80.jpg"
+                },                
+                {
+                    "brand_id": "3407123",
+                    "brand_name": "百图betu",
+                    "brand_logo": "https://h2.appsimg.com/b.appsimg.com/upload/momin/2018/05/14/141/1526267071946_1035x336_80.jpg"
+                },                
+                {
+                    "brand_id": "3491507",
+                    "brand_name": "DAZZLE",
+                    "brand_logo": "https://h2.appsimg.com/b.appsimg.com/upload/momin/2019/02/19/2/1550545224247_1035x336_80.jpg"
+                },                
+                {
+                    "brand_id": "3588348",
+                    "brand_name": "歌力思",
+                    "brand_logo": "https://h2.appsimg.com/b.appsimg.com/upload/momin/2018/02/26/103/1519641404100_1035x336_80.jpg"
+                },                
+                {
+                    "brand_id": "100030811",
+                    "brand_name": "TITI",
+                    "brand_logo": "https://h2.appsimg.com/b.appsimg.com/upload/momin/2019/02/12/38/1549968889234_1035x336_80.jpg"
+                },
+                {
+                    "brand_id": "3479855",
+                    "brand_name": "A02",
+                    "brand_logo": "https://h2.appsimg.com/b.appsimg.com/upload/momin/2019/01/21/46/1548070045387_1035x336_80.jpg"
+                },
+                {
+                    "brand_id": "3190528",
+                    "brand_name": "EIN",
+                    "brand_logo": "https://h2.appsimg.com/b.appsimg.com/upload/momin/2018/08/30/38/1535598679515_1035x336_80.png"
+                },
+                {
+                    "brand_id": "3496436",
+                    "brand_name": "JESSIE",
+                    "brand_logo": "https://h2.appsimg.com/b.appsimg.com/upload/momin/2019/01/29/192/1548754294245_1035x336_80.jpg"
+                },                
+                {
+                    "brand_id": "3479855",
+                    "brand_name": "A02",
+                    "brand_logo": "https://h2.appsimg.com/b.appsimg.com/upload/momin/2019/01/21/46/1548070045387_1035x336_80.jpg"
+                },
+                {
+                    "brand_id": "3588348",
+                    "brand_name": "歌力思",
+                    "brand_logo": "https://h2.appsimg.com/b.appsimg.com/upload/momin/2018/02/26/103/1519641404100_1035x336_80.jpg"
+                },
+                {
+                    "brand_id": "3479688",
+                    "brand_name": "艾维",
+                    "brand_logo": "https://h2.appsimg.com/b.appsimg.com/upload/momin/2018/09/30/83/1538302136753_1035x336_80.jpg"
+                },
+                {
+                    "brand_id": "3533069",
+                    "brand_name": "妮维雅",
+                    "brand_logo": "https://h2.appsimg.com/b.appsimg.com/upload/momin/2018/04/02/54/1522670680103_1035x336_80.jpg"
+                },
+                {
+                    "brand_id": "3472261",
+                    "brand_name": "瑞典丽贝乐",
+                    "brand_logo": "https://h2.appsimg.com/b.appsimg.com/upload/momin/2018/11/23/159/1542963361400_1035x336_80.jpg"
+                },
+                {
+                    "brand_id": "3630169",
+                    "brand_name": "Lego乐高",
+                    "brand_logo": "https://h2.appsimg.com/b.appsimg.com/upload/momin/2018/10/26/146/1540543796487_1035x336_80.jpg"
                 }
             ]
         }

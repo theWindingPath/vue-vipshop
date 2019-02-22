@@ -2,53 +2,118 @@
   <div class="flagshipStore">
     <div class="menu-wrapper">
       <ul>
-        <li v-for="(item, index) in flagshipStore" :key="item.id" class="menu-item" :class="{'current': index === currentIndex}">
+        <li v-for="(item, index) in flagshipStore" :key="item.id" class="menu-item" :class="{'current': index === currentIndex}"
+        @click="selectMenu(index, $event)">
           <span class="title">{{item.title}}</span>
         </li>
       </ul>
     </div>
-    <div class="brand-wrapper">
+    <scroll class="brand-wrapper"
+            ref="brandWapper"
+            :data="flagshipStore"
+            :probe-type="probeType"
+            :listen-scroll="listenScroll"
+            @scroll="scroll">
       <ul>
-        <li v-for="item in flagshipStore" :key="item.id" class="brand-list">
+        <li v-for="item in flagshipStore" :key="item.id" class="brand-list" ref="listGroup">
           <h1 class="title">{{item.title}}</h1>
           <ul class="store-list">
-            <li v-for="brand in item.brand" :key="brand.id" class="brand-item">
-              <img class="avatar" width="56" height="56" :src="brand.brand_logo">
+            <li @click="selectBrand(brand)" v-for="brand in item.brand" :key="brand.id" class="brand-item">
+              <img class="avatar" width="56" height="56" v-lazy="brand.brand_logo">
               <span class="name">{{brand.brand_name}}</span>
             </li>
           </ul>
         </li>
       </ul>
-    </div>
+    </scroll>
+    <router-view></router-view>
   </div>
 </template>
 
 <script type="text/ecmascript-6">
 import {getFlagshipStore} from 'api/flagshipStore'
 import {ERR_0K} from 'api/config'
+import Scroll from 'base/scroll/scroll'
+import {mapMutations} from 'vuex'
 
 export default {
   data() {
     return {
-      flagshipStore: []
+      flagshipStore: [],
+      scrollY: -1, // 数字
+      currentIndex: 0
     }
   },
   created() {
     this._getFlagshipStore()
-  },
-  computed: {
-    currentIndex() {
-      return 0
-    }
+    this.listenScroll = true
+    this.probeType = 3
+    this.listHeight = []
   },
   methods: {
     _getFlagshipStore() {
       getFlagshipStore().then((res) => {
         if (res.error === ERR_0K) {
-          console.log(res.data)
+          // console.log(res.data)
           this.flagshipStore = res.data
         }
       })
+    },
+    scroll(pos) {
+      // 将pos.y（负值小数，转换为正值整数）
+      this.scrollY = Math.abs(Math.round(pos.y))
+      // console.log(this.scrollY)
+    },
+    _calculateHeight() {
+      this.listHeight = []
+      const list = this.$refs.listGroup // 列表数组
+      let height = 0
+      this.listHeight.push(height) // 数组第一个元素 为 0
+      for (let i = 0; i < list.length; i++) {
+        let item = list[i]
+        height += item.clientHeight // 每个列表高度 累加
+        this.listHeight.push(height) // 高度数组
+        // console.log(this.listHeight)
+      }
+      // console.log(this.listHeight)
+    },
+    selectMenu(index, event) {
+      // console.log(index, event)
+      // this.currentIndex = index
+      this.scrollY = this.listHeight[index]
+      let el = this.$refs.listGroup[index]
+      this.$refs.brandWapper.scrollToElement(el, 300)
+    },
+    selectBrand(brand) {
+      this.$router.push({
+        path: `/flagshipStore/${brand.brand_id}`
+      })
+      // 使用vuex保存数据
+      this.setStore(brand)
+    },
+    ...mapMutations({
+      setStore: 'SET_STORE'
+    })
+  },
+  components: {
+    Scroll
+  },
+  watch: {
+    flagshipStore() { // 获取数据后计算列表高度
+      setTimeout(() => {
+        this._calculateHeight()
+      }, 20)
+    },
+    scrollY(newY) { // 监听滚动y值 改变 currentIndex
+      for (let i = 0; i < this.listHeight.length; i++) {
+        let height1 = this.listHeight[i] // 区间上值
+        let height2 = this.listHeight[i + 1] // 高度区间下值
+        if (!height2 || (newY >= height1 && newY < height2)) {
+          this.currentIndex = i
+          return
+        }
+      }
+      return 0
     }
   }
 }
@@ -101,6 +166,8 @@ export default {
     .brand-list
       padding 10px 0
       border-1px(rgba(7, 17, 27, 0.1))
+      &:last-child
+        border-none()
       .title
         height 26px
         width 100%
