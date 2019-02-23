@@ -21,6 +21,9 @@ var recommendData = recData.recommend
 // 获取旗舰店flagshipStore数据mock
 var flagData= require('../src/data/flagshipStore.json')
 var flagshipData = flagData.flagshipStore
+// 获取商品数据
+var prosData = require('../src/data/products.json')
+var productsData = prosData.brand
 
 const HOST = process.env.HOST
 const PORT = process.env.PORT && Number(process.env.PORT)
@@ -74,6 +77,13 @@ const devWebpackConfig = merge(baseWebpackConfig, {
         res.json({
           error: 0,
           data: flagshipData
+        })
+      })
+
+      app.get('/api/getProducts', function(req, res) {
+        res.json({
+          error: 0,
+          data: productsData
         })
       })
     },
