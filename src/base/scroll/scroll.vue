@@ -54,6 +54,7 @@ export default {
         refresh() {
             // 前提是this.scroll是要有的
             this.scroll && this.scroll.refresh()
+            // console.log('refresh')
         },
         scrollToElement() {
             this.scroll && this.scroll.scrollToElement.apply(this.scroll, arguments)
@@ -63,6 +64,7 @@ export default {
         data() {
             setTimeout(() => { // 异步执行一般要使用 settimeout(fn, 20)
                 this.refresh() // 更新better-scroll
+                // console.log('data')
             }, 20)
         }
     }

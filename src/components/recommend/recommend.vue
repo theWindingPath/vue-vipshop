@@ -89,7 +89,7 @@
       _getRecommendShop() {
         getRecommendShop().then((res) => {
           if (res.error === ERR_0K) {
-            console.log(res)
+            // console.log(res)
             this.brandList = res.data
           }
         })

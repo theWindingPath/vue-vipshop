@@ -1,6 +1,6 @@
 <template>
   <transition name="slide">
-    <ProductList :title="title" :bgImage="bgImage" class="store-list"></ProductList>
+    <ProductList :title="title" :bgImage="bgImage" :products="products" class="store-list"></ProductList>
   </transition>
 </template>
 
@@ -40,7 +40,7 @@ export default {
       getProducts().then((res) => {
         if (res.error === ERR_0K) {
           let brand = res.data
-          console.log(brand)
+          // console.log(brand)
           brand.forEach((item) => {
             if (item.brand_id === this.store.brand_id) { // 根据点击vuex上的id，加载对应旗舰店products数据
               this.products = item.products
