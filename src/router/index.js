@@ -6,6 +6,11 @@ import rank from 'components/rank/rank'
 import search from 'components/search/search'
 import StoreDetail from 'components/store-detail/store-detail'
 
+// 底部tab路由 es6语法
+const UserCenter = () => import('components/user-center/user-center')
+const ShopCenter = () => import('components/shop-center/shop-center')
+const LikeCenter = () => import('components/like-center/like-center')
+
 Vue.use(Router) // 注册路由
 
 export default new Router({ // 导出路由实例
@@ -35,6 +40,18 @@ export default new Router({ // 导出路由实例
     {
       path: '/search',
       component: search
+    },
+    {
+      path: '/user',
+      component: UserCenter
+    },
+    {
+      path: '/shop',
+      component: ShopCenter
+    },
+    {
+      path: '/like',
+      component: LikeCenter
     }
   ]
 })

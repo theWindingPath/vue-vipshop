@@ -11,17 +11,45 @@
             <div>
                 <div class="bg-image" :style="bgStyle">
                 </div>
+                <nav class="vis-product-filter-bar">
+                    <ul class="filter-opt-holder">
+                        <li class="filter-opt filter-price">
+                            <span>价格</span>
+                            <span class="iconbox">
+                                <i class="icon-paixu-shang"></i>
+                                <i class="icon-paixu-xia"></i>
+                            </span>
+                        </li>
+                        <li class="filter-opt filter-discount">
+                            <span>折扣</span>
+                            <span class="iconbox">
+                                <i class="icon-paixu-shang"></i>
+                                <i class="icon-paixu-xia"></i>
+                            </span>
+                        </li>
+                        <li class="filter-opt filter-select">
+                            <span>筛选</span>
+                            <span class="iconbox">
+                                <i class="icon-shaixuan"></i>
+                            </span>
+                        </li>
+                    </ul>
+                </nav>
                 <div v-if="products.length" class="products-wrapperr">
                     <ul>
                         <li v-for="product in products" :key="product.id" class="products-item">
                             <div class="icon">
-                                <img width="120px" height="150px" :src="product.small_image">
+                                <!-- <img width="120px" height="150px" :src="product.small_image"> -->
+                                <img width="120px" height="150px" v-lazy="product.small_image">
                             </div>
                             <div class="content">
                                 <div class="price">
-                                    <span class="now">￥{{product.vipshop_price}}</span><span class="old">￥{{product.market_price}}</span><span class="discount">{{product.vip_discount}}</span>
+                                    <span class="now">￥{{product.vipshop_price}}</span><span class="old"><del>￥{{product.market_price}}</del></span><span class="discount">{{product.vip_discount}}</span>
                                 </div>
                                 <p class="name">{{product.product_name}}</p>
+                                <div class="cartcontrol-wrapper">
+                                    <div class="cart-add icon-buoumaotubiao40"></div>
+                                </div>
                             </div>
                         </li>
                     </ul>
@@ -29,11 +57,16 @@
             </div>
         </scroll>
       </div>
+      <div class="footTab-wrapper">
+          <foot-tab></foot-tab>
+      </div>
+      <router-view></router-view>
   </div>
 </template>
 
 <script type="text/ecmascript-6">
 import Scroll from 'base/scroll/scroll'
+import FootTab from 'components/foot-tab/foot-tab'
 
 export default {
     props: {
@@ -66,7 +99,8 @@ export default {
         }
     },
     components: {
-        Scroll
+        Scroll,
+        FootTab
     }
 }
 </script>
@@ -133,6 +167,49 @@ export default {
                     height 160px
                     background-size 100% 160px
                     // background-size: cover
+                .vis-product-filter-bar
+                    position sticky
+                    background #fff
+                    width 100%
+                    margin 0 auto
+                    .filter-opt-holder
+                        position relative
+                        box-sizing border-box
+                        border-bottom 1px solid #f4f4f4
+                        height 42px
+                        color #585c64
+                        .filter-opt
+                            float left
+                            width 33.3%
+                            line-height 42px
+                            height 42px
+                            font-size $font-size-medium
+                            text-align center
+                            .iconbox
+                                display inline-block
+                                position relative
+                                vertical-align top
+                                width 12px
+                                height 100%
+                                line-height normal
+                                color #585c64
+                                i
+                                    display inline-block
+                                    position relative
+                                    left 0
+                                    font-size 12px
+                                .icon-paixu-shang
+                                    top 12px
+                                    width 12px
+                                    height 3px
+                                .icon-paixu-xia
+                                    bottom 3px
+                                    width 12px
+                                    height 6px
+                                .icon-shaixuan
+                                    top 13px
+                                    width 12px
+                                    height 6px
                 .products-wrapperr
                     width 100%
                     .products-item
@@ -142,5 +219,64 @@ export default {
                         .icon
                             flex 0 0 120px
                             width 120px
+                            // margin-right 10px
+                        .content
+                            flex 1
+                            position relative
+                            padding 12px 6px
+                            background-color #fff
+                            .price
+                                line-height 18px
+                                line-height 18px
+                                margin-bottom 8px
+                                color #222
+                                .span
+                                    display block
+                                    float left
+                                    font-size 16px
+                                    font-weight bolder
+                                .now
+                                    font-weight 500
+                                .old
+                                    margin 2px 0 0 6px
+                                    height 18px
+                                    line-height 18px
+                                    font-size 12px
+                                    color #98989f
+                                    font-weight 400
+                                .discount
+                                    margin 2px 0 0 6px
+                                    height 18px
+                                    line-height 18px
+                                    font-size 12px
+                                    color #98989f
+                                    font-weight 400
+                            .name
+                                margin-bottom 12px
+                                height 16px
+                                line-height 16px
+                                text-align left
+                                color #585c64
+                                font-size 14px
+                            .cartcontrol-wrapper
+                                position absolute
+                                right 22px
+                                bottom 22px
+                                padding 6px
+                                width 28px
+                                height 28px
+                                text-align center
+                                box-sizing border-box
+                                border-radius 50%
+                                background $color-theme
+                                .cart-add
+                                    display inline-block
+                                    line-height 16px
+                                    font-size 14px
+                                    color #fff
+        .footTab-wrapper
+          position fixed
+          left 6px
+          bottom 6px
 
 </style>
