@@ -44,7 +44,7 @@ export default {
           brand.forEach((item) => {
             if (item.brand_id === this.store.brand_id) { // 根据点击vuex上的id，加载对应旗舰店products数据
               this.products = item.products
-              console.log(this.products)
+              // console.log(this.products)
             }
           })
         }

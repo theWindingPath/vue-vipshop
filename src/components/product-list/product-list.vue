@@ -47,7 +47,7 @@
                                     <span class="now">￥{{product.vipshop_price}}</span><span class="old"><del>￥{{product.market_price}}</del></span><span class="discount">{{product.vip_discount}}</span>
                                 </div>
                                 <p class="name">{{product.product_name}}</p>
-                                <div class="cartcontrol-wrapper">
+                                <div class="cartcontrol-wrapper" @click="addCart(product)">
                                     <div class="cart-add icon-buoumaotubiao40"></div>
                                 </div>
                             </div>
@@ -67,6 +67,7 @@
 <script type="text/ecmascript-6">
 import Scroll from 'base/scroll/scroll'
 import FootTab from 'components/foot-tab/foot-tab'
+import {mapActions} from 'vuex'
 
 export default {
     props: {
@@ -96,7 +97,15 @@ export default {
     methods: {
         back() {
             this.$router.back()
-        }
+        },
+        addCart(product) {
+            this.addProduct(product)
+
+            console.log(event)
+        },
+        ...mapActions([
+            'addProduct'
+        ])
     },
     components: {
         Scroll,
