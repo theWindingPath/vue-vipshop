@@ -3,7 +3,69 @@
         {
             "brand_id": "3574150",
             "brand_name": "NBA",
-            "brand_logo": "https://h2.appsimg.com/b.appsimg.com/upload/momin/2018/08/28/105/1535442959281_1035x336_80.jpg"
+            "brand_logo": "https://h2.appsimg.com/b.appsimg.com/upload/momin/2018/08/28/105/1535442959281_1035x336_80.jpg",
+            "products": [
+                {
+                    "brand_show_name": "NBA",
+                    "brand_store_logo": "//h2.appsimg.com/a.appsimg.com/upload/brandcool/0/590d45f191da45b0b39f5eedda7f2386/10000148/primary.png",
+                    "product_id": 660225833,
+                    "product_name": "NBA 时尚休闲 男女适用双肩包书包背包",
+                    "small_image": "//h2.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/2018/05/18/46/188a8d31-4f40-481d-bc8e-823a47adcbe8.jpg",
+                    "market_price": 259,
+                    "vip_discount": "3.4折",
+                    "vipshop_price": 89
+                },
+                {
+                    "brand_show_name": "NBA",
+                    "brand_store_logo": "//h2.appsimg.com/a.appsimg.com/upload/brandcool/0/590d45f191da45b0b39f5eedda7f2386/10000148/primary.png",
+                    "product_id": 658800537,
+                    "product_name": "NBA 轻盈编织 女款篮球鞋",
+                    "small_image": "//h2.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/2018/05/18/177/bc1dfc71-700e-4409-a731-459fad4bc6c1.jpg",
+                    "market_price": 399,
+                    "vip_discount": "3.2折",
+                    "vipshop_price": 127
+                },
+                {
+                    "brand_show_name": "NBA",
+                    "brand_store_logo": "//h2.appsimg.com/a.appsimg.com/upload/brandcool/0/590d45f191da45b0b39f5eedda7f2386/10000148/primary.png",
+                    "product_id": 658800493,
+                    "product_name": "NBA 耐磨透气 女款运动鞋",
+                    "small_image": "//h2.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/2018/05/18/142/4c292637-4393-4e0b-a150-6e142f71c845.jpg",
+                    "market_price": 369,
+                    "vip_discount": "3.5折",
+                    "vipshop_price": 128
+                },
+                {
+                    "brand_show_name": "NBA",
+                    "brand_store_logo": "//h2.appsimg.com/a.appsimg.com/upload/brandcool/0/590d45f191da45b0b39f5eedda7f2386/10000148/primary.png",
+                    "product_id": 660225937,
+                    "product_name": "NBA 耐磨舒适高帮 男款篮球鞋男运动鞋",
+                    "small_image": "//h2.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/2018/12/05/39/ccdec583-e948-4d99-94d8-03c446d7818c_5t.jpg",
+                    "market_price": 399,
+                    "vip_discount": "5折",
+                    "vipshop_price": 198
+                },
+                {
+                    "brand_show_name": "NBA",
+                    "brand_store_logo": "//h2.appsimg.com/a.appsimg.com/upload/brandcool/0/590d45f191da45b0b39f5eedda7f2386/10000148/primary.png",
+                    "product_id": 658800189,
+                    "product_name": "NBA 轻便透气 男款缓震耐磨高帮篮球鞋",
+                    "small_image": "//h2.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/2018/05/17/91/7d771d21-ccf3-4a39-9ae6-d7410eff83f2.jpg",
+                    "market_price": 469,
+                    "vip_discount": "5.7折",
+                    "vipshop_price": 268
+                },
+                {
+                    "brand_show_name": "NBA",
+                    "brand_store_logo": "//h2.appsimg.com/a.appsimg.com/upload/brandcool/0/590d45f191da45b0b39f5eedda7f2386/10000148/primary.png",
+                    "product_id": 658800435,
+                    "product_name": "NBA 透气高帮百搭耐磨缓震 男款篮球鞋男运动鞋",
+                    "small_image": "//h2.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/2018/01/30/39/ba8c41f0-31b7-40ed-8d04-5fed126a39b6_t.jpg",
+                    "market_price": 499,
+                    "vip_discount": "4.4折",
+                    "vipshop_price": 219
+                }
+            ]
         },
         {
             "brand_id": "3479855",
@@ -105,12 +167,136 @@
         {
             "brand_id": "3766772",
             "brand_name": "玉兰油",
-            "brand_logo": "https://h2.appsimg.com/b.appsimg.com/2017/08/09/569/1502264620256_1035x336_80.jpg"
+            "brand_logo": "https://h2.appsimg.com/b.appsimg.com/2017/08/09/569/1502264620256_1035x336_80.jpg",
+            "products":[
+                {
+                    "brand_show_name": "玉兰油",
+                    "brand_store_logo": "//h2.appsimg.com/a.appsimg.com/upload/brandcool/0/c2758b1a1d40486d945fb9bba87b5b3a/10000828/primary.png",
+                    "product_id": 718771631,
+                    "product_name": "玉兰油OLAY 水感透白光塑精华30ml光感小白瓶补水美白",
+                    "small_image": "//h2.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/105209/2019/0124/7/62e21fd9-457d-4f52-a94d-b1825c7717cf_5t.jpg",
+                    "market_price": 280,
+                    "vip_discount": "7.8折",
+                    "vipshop_price": 219
+                },
+                {
+                    "brand_show_name": "玉兰油",
+                    "brand_store_logo": "//h2.appsimg.com/a.appsimg.com/upload/brandcool/0/c2758b1a1d40486d945fb9bba87b5b3a/10000828/primary.png",
+                    "product_id": 718771611,
+                    "product_name": "玉兰油OLAY 新生经典面霜水眼霜套装  补水保湿 提拉紧致 淡化细纹",
+                    "small_image": "//h2.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/105209/2018/0605/123/5361980c-93ef-40f1-907d-531f324e38d3_5t.jpg",
+                    "market_price": 1126,
+                    "vip_discount": "5.1折",
+                    "vipshop_price": 569
+                },
+                {
+                    "brand_show_name": "玉兰油",
+                    "brand_store_logo": "//h2.appsimg.com/a.appsimg.com/upload/brandcool/0/c2758b1a1d40486d945fb9bba87b5b3a/10000828/primary.png",
+                    "product_id": 718771556,
+                    "product_name": "玉兰油OLAY亮洁晳颜祛斑精华液40ml 美白保湿精华",
+                    "small_image": "//h2.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/105209/2018/1113/71/1bf281b3-9f3f-4243-8584-fe24b90c8252_5t.jpg",
+                    "market_price": 390,
+                    "vip_discount": "7.7折",
+                    "vipshop_price": 299
+                },
+                {
+                    "brand_show_name": "玉兰油",
+                    "brand_store_logo": "//h2.appsimg.com/a.appsimg.com/upload/brandcool/0/c2758b1a1d40486d945fb9bba87b5b3a/10000828/primary.png",
+                    "product_id": 718771610,
+                    "product_name": "玉兰油OLAY 新生塑颜金纯活能水250ml 买赠礼盒 补水",
+                    "small_image": "//h2.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/105209/2019/0122/13/7b0f8c00-6cab-46aa-9da7-acc15924d520_5t.jpg",
+                    "market_price": 490,
+                    "vip_discount": "5.1折",
+                    "vipshop_price": 249
+                },
+                {
+                    "brand_show_name": "玉兰油",
+                    "brand_store_logo": "//h2.appsimg.com/a.appsimg.com/upload/brandcool/0/c2758b1a1d40486d945fb9bba87b5b3a/10000828/primary.png",
+                    "product_id": 718771547,
+                    "product_name": "玉兰油OLAY 多效修护3件套礼盒 补水保湿提亮肤色淡化细纹",
+                    "small_image": "//h2.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/105209/2019/0124/129/de28e0cb-050a-4a94-9588-57f80d52a988_5t.jpg",
+                    "market_price": 424,
+                    "vip_discount": "6.1折",
+                    "vipshop_price": 258
+                },
+                {
+                    "brand_show_name": "玉兰油",
+                    "brand_store_logo": "//h2.appsimg.com/a.appsimg.com/upload/brandcool/0/c2758b1a1d40486d945fb9bba87b5b3a/10000828/primary.png",
+                    "product_id": 718771727,
+                    "product_name": "玉兰油OLAY 新生塑颜空气感凝霜50g  面霜 保湿紧致",
+                    "small_image": "//h2.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/2018/04/12/98/414ac4f7722c412fb622c832d4ece6c4-5.jpg",
+                    "market_price": 400,
+                    "vip_discount": "6折",
+                    "vipshop_price": 239
+                }
+            ]
         },
         {
             "brand_id": "3743378",
             "brand_name": "Levi's",
-            "brand_logo": "https://h2.appsimg.com/b.appsimg.com/upload/momin/2018/12/10/156/1544436950072_1035x336_80.jpg"
+            "brand_logo": "https://h2.appsimg.com/b.appsimg.com/upload/momin/2018/12/10/156/1544436950072_1035x336_80.jpg",
+            "products": [
+                {
+                    "brand_show_name": "Levi's",
+                    "brand_store_logo": "//h2.appsimg.com/a.appsimg.com/upload/brandcool/0/a2decbeba7a34d7986e93ae1607a68c0/10000127/primary.png",
+                    "product_id": 603974598148887,
+                    "product_name": "Levis 经典直筒女式牛仔裤",
+                    "small_image": "//h2.appsimg.com/a.appsimg.com/upload/merchandise/pdcimg/2018/12/17/18/62064011545010548932_5t.jpg",
+                    "market_price": 631,
+                    "vip_discount": "7.7折",
+                    "vipshop_price": 489
+                },
+                {
+                    "brand_show_name": "Levi's",
+                    "brand_store_logo": "//h2.appsimg.com/a.appsimg.com/upload/brandcool/0/a2decbeba7a34d7986e93ae1607a68c0/10000127/primary.png",
+                    "product_id": 603976535864087,
+                    "product_name": "Levi's李维斯男士501® 经典直筒中腰牛仔裤",
+                    "small_image": "//h2.appsimg.com/a.appsimg.com/upload/merchandise/pdcimg/2018/10/17/82/520430721539773856023_5t.jpg",
+                    "market_price": 899,
+                    "vip_discount": "6.2折",
+                    "vipshop_price": 559
+                },
+                {
+                    "brand_show_name": "Levi's",
+                    "brand_store_logo": "//h2.appsimg.com/a.appsimg.com/upload/brandcool/0/a2decbeba7a34d7986e93ae1607a68c0/10000127/primary.png",
+                    "product_id": 603974616314647,
+                    "product_name": "LEVI'S ORIGINAL TRUCKER 女款丹宁牛仔外套",
+                    "small_image": "//h2.appsimg.com/a.appsimg.com/upload/merchandise/pdcimg/2018/12/03/116/292362271543828492752_5t.jpg",
+                    "market_price": 727,
+                    "vip_discount": "7.3折",
+                    "vipshop_price": 529
+                },
+                {
+                    "brand_show_name": "Levi's",
+                    "brand_store_logo": "//h2.appsimg.com/a.appsimg.com/upload/brandcool/0/a2decbeba7a34d7986e93ae1607a68c0/10000127/primary.png",
+                    "product_id": 603974598923031,
+                    "product_name": "Levis 李维斯 经典 501 男士直筒牛仔裤",
+                    "small_image": "//h2.appsimg.com/a.appsimg.com/upload/merchandise/pdcimg/2018/12/17/144/551987631545010543955_5t.jpg",
+                    "market_price": 680,
+                    "vip_discount": "8.4折",
+                    "vipshop_price": 569
+                },
+                {
+                    "brand_show_name": "Levi's",
+                    "brand_store_logo": "//h2.appsimg.com/a.appsimg.com/upload/brandcool/0/a2decbeba7a34d7986e93ae1607a68c0/10000127/primary.png",
+                    "product_id": 603974616634135,
+                    "product_name": "LEVI'S 511™ SLIM FIT系列男款牛仔裤",
+                    "small_image": "//h2.appsimg.com/a.appsimg.com/upload/merchandise/pdcimg/2018/11/28/192/33533381543390778103_5t.jpg",
+                    "market_price": 853,
+                    "vip_discount": "6.9折",
+                    "vipshop_price": 589
+                },
+                {
+                    "brand_show_name": "Levi's",
+                    "brand_store_logo": "//h2.appsimg.com/a.appsimg.com/upload/brandcool/0/a2decbeba7a34d7986e93ae1607a68c0/10000127/primary.png",
+                    "product_id": 603974616625943,
+                    "product_name": "Levis 李维斯 经典 514 男士直筒牛仔裤",
+                    "small_image": "//h2.appsimg.com/a.appsimg.com/upload/merchandise/pdcimg/2018/12/04/46/241673421543915228942_5t.jpg",
+                    "market_price": 611,
+                    "vip_discount": "8.2折",
+                    "vipshop_price": 499
+                }
+            ]
         },
         {
             "brand_id": "2223844",

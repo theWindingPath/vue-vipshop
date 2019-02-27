@@ -47,7 +47,7 @@
                                     <span class="now">￥{{product.vipshop_price}}</span><span class="old"><del>￥{{product.market_price}}</del></span><span class="discount">{{product.vip_discount}}</span>
                                 </div>
                                 <p class="name">{{product.product_name}}</p>
-                                <div class="cartcontrol-wrapper" @click="addCart(product)">
+                                <div class="cartcontrol-wrapper" @click.stop.prevent="addCart(product, $event)">
                                     <div class="cart-add icon-buoumaotubiao40"></div>
                                 </div>
                             </div>
@@ -58,7 +58,7 @@
         </scroll>
       </div>
       <div class="footTab-wrapper">
-          <foot-tab></foot-tab>
+          <foot-tab ref="footTab"></foot-tab>
       </div>
       <router-view></router-view>
   </div>
@@ -98,10 +98,20 @@ export default {
         back() {
             this.$router.back()
         },
-        addCart(product) {
+        addCart(product, event) {
+            if (!event._constructed) { // 解决浏览器点击派发两次问题
+                // return
+            }
             this.addProduct(product)
 
-            console.log(event)
+            // console.log(event)
+            // 调用子组件drop小球动画
+            this._drop(event.target) // 将点击的dom传过去，计算动画x/y轴距离
+        },
+        _drop(target) {
+            this.$nextTick(() => {
+                this.$refs.footTab.drop(target) // 调用子组件foot-tab函数
+            })
         },
         ...mapActions([
             'addProduct'

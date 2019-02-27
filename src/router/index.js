@@ -5,6 +5,7 @@ import flagshipStore from 'components/flagshipStore/flagshipStore'
 import rank from 'components/rank/rank'
 import search from 'components/search/search'
 import StoreDetail from 'components/store-detail/store-detail'
+import RecomStoreDetail from 'components/recom-store-detail/recom-store-detail'
 
 // 底部tab路由 es6语法
 const UserCenter = () => import('components/user-center/user-center')
@@ -21,7 +22,13 @@ export default new Router({ // 导出路由实例
     },
     {
       path: '/recommend', // 路由to对应的路径
-      component: recommend // 路由到对应的组件
+      component: recommend,
+      children: [
+        {
+          path: ':id',
+          component: RecomStoreDetail
+        }
+      ] // 路由到对应的组件
     },
     {
       path: '/flagshipStore',

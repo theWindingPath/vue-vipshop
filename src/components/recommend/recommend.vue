@@ -25,7 +25,7 @@
           <!-- <h1 class="list-title">热门旗舰店推荐</h1> -->
           <h1 class="list-title">-每天早10点 - 晚8点上新-</h1>
           <ul>
-            <li v-for="item in brandList" :key="item.id" class="item">
+            <li @click="selectBrand(item)" v-for="item in brandList" :key="item.id" class="item">
               <div class="avater">
                 <img width="100%" height="180" v-lazy="item.brand_bg_logo">
               </div>
@@ -46,6 +46,7 @@
         <loading></loading>
       </div>
     </scroll>
+    <router-view></router-view>
   </div>
 </template>
 
@@ -55,6 +56,7 @@
   import Slider from 'base/slider/slider' // 引入slider组件
   import Scroll from 'base/scroll/scroll'
   import Loading from 'base/loading/loading'
+  import {mapMutations} from 'vuex'
 
   export default {
     data() {
@@ -105,7 +107,17 @@
             this.$refs.scroll.refresh()
           }, 20)
         }
-      }
+      },
+      selectBrand(brand) {
+        this.$router.push({
+          path: `/recommend/${brand.brand_id}`
+        })
+        // 使用vuex保存数据
+        this.setStore(brand)
+      },
+      ...mapMutations({
+        setStore: 'SET_STORE'
+      })
     },
     components: {
       Slider, // 注册组件
