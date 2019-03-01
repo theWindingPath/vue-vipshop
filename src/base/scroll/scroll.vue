@@ -54,7 +54,7 @@ export default {
         refresh() {
             // 前提是this.scroll是要有的
             this.scroll && this.scroll.refresh()
-            // console.log('refresh')
+            console.log('refresh')
         },
         scrollToElement() {
             this.scroll && this.scroll.scrollToElement.apply(this.scroll, arguments)
