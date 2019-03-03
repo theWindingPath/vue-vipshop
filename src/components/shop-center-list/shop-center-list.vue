@@ -27,10 +27,6 @@
             </ul>
           </div>
         </scroll>
-        <!-- <div class="shopping-cart-empty" v-show="totalPrice===0">
-          <div class="bgImg"></div>
-          <h2 class="subtitle">购物车空空如也</h2>
-        </div> -->
     </div>
 </template>
 

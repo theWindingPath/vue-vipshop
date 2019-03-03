@@ -66,6 +66,36 @@
                     "market_price": 899,
                     "vip_discount": "3.3折",
                     "vipshop_price": 299
+                },
+                {
+                    "brand_show_name": "阿迪达斯",
+                    "brand_store_logo": "//h2.appsimg.com/a.appsimg.com/upload/brandcool/0/641594686f384af0bacb26d542c219bf/10000223/primary.png",
+                    "product_id": 491965371,
+                    "product_name": "休闲简约 女款短袖T恤 三叶草系列 阿迪达斯adidas",
+                    "small_image": "//h2.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/2018/04/24/66/64ed735e-b0f4-4cfd-ae69-e5c72e964ee7_t.jpg",
+                    "market_price": 299,
+                    "vip_discount": "4折",
+                    "vipshop_price": 119
+                },
+                {
+                    "brand_show_name": "阿迪达斯",
+                    "brand_store_logo": "//h2.appsimg.com/a.appsimg.com/upload/brandcool/0/641594686f384af0bacb26d542c219bf/10000223/primary.png",
+                    "product_id": 716207135,
+                    "product_name": "三叶草系列STAN SMITH 男女款经典鞋小白鞋板鞋",
+                    "small_image": "//h2.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/2018/07/26/170/5ee863fd-6dbf-4f18-91e9-d20a2f1ac82b_5t.jpg",
+                    "market_price": 899,
+                    "vip_discount": "4.4折",
+                    "vipshop_price": 399
+                },
+                {
+                    "brand_show_name": "阿迪达斯",
+                    "brand_store_logo": "//h2.appsimg.com/a.appsimg.com/upload/brandcool/0/641594686f384af0bacb26d542c219bf/10000223/primary.png",
+                    "product_id": 716199998,
+                    "product_name": "耐磨缓震 男中童训练鞋运动鞋",
+                    "small_image": "//h2.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/2018/10/25/198/45b9463c-3b3b-4892-ae77-fe49e1fcd030_5t.jpg",
+                    "market_price": 399,
+                    "vip_discount": "7.5折",
+                    "vipshop_price": 298
                 }
             ]
         },
@@ -74,21 +104,197 @@
             "brand_name": "安踏特卖旗舰店",
             "brand_show_name": "安踏",
             "promotion_discount": "3.9 折起",
-            "brand_bg_logo": "https://h2.appsimg.com/b.appsimg.com/upload/mst/2018/12/27/11/30a8661db6804e6f0e4e7b97dcf2dc0f.jpg!75.webp"
+            "brand_bg_logo": "https://h2.appsimg.com/b.appsimg.com/upload/mst/2018/12/27/11/30a8661db6804e6f0e4e7b97dcf2dc0f.jpg!75.webp",
+            "products": [
+                {
+                    "brand_show_name": "安踏",
+                    "brand_store_logo": "//h2.appsimg.com/a.appsimg.com/upload/brandcool/0/c01f0d4e2f1143f185dce3b7f91811d4/10000269/primary.png",
+                    "product_id": 2149731175,
+                    "product_name": "透气耐磨 女款运动跑鞋 跑步系列",
+                    "small_image": "//h2.appsimg.com/a.appsimg.com/upload/merchandise/pdc/91274474434539547/0cf55be7-7400-407f-8e12-ef4e29a4e265/12715500-2-5.jpg",
+                    "market_price": 399,
+                    "vip_discount": "2.5折",
+                    "vipshop_price": 98
+                },
+                {
+                    "brand_show_name": "安踏",
+                    "brand_store_logo": "//h2.appsimg.com/a.appsimg.com/upload/brandcool/0/c01f0d4e2f1143f185dce3b7f91811d4/10000269/primary.png",
+                    "product_id": 2149731381,
+                    "product_name": "排汗速干 女款运动九分裤 生活系列",
+                    "small_image": "//h2.appsimg.com/a.appsimg.com/upload/merchandise/pdc/87052406692904993/a47d80fd-451b-4ced-9a9d-286b93b098d9/16828747-1-5.jpg",
+                    "market_price": 179,
+                    "vip_discount": "7.7折",
+                    "vipshop_price": 138
+                },
+                {
+                    "brand_show_name": "安踏",
+                    "brand_store_logo": "//h2.appsimg.com/a.appsimg.com/upload/brandcool/0/c01f0d4e2f1143f185dce3b7f91811d4/10000269/primary.png",
+                    "product_id": 2149743199,
+                    "product_name": "耐磨透气 男款篮球鞋 篮球系列",
+                    "small_image": "//h2.appsimg.com/a.appsimg.com/upload/merchandise/pdc/225819570214830110/102752aa-c62a-4f2c-b7f0-598cca7cc037/91721130-1-5.jpg",
+                    "market_price": 399,
+                    "vip_discount": "3.5折",
+                    "vipshop_price": 138
+                },
+                {
+                    "brand_show_name": "安踏",
+                    "brand_store_logo": "//h2.appsimg.com/a.appsimg.com/upload/brandcool/0/c01f0d4e2f1143f185dce3b7f91811d4/10000269/primary.png",
+                    "product_id": 2149731121,
+                    "product_name": "耐磨拼接 男款运动鞋 生活系列",
+                    "small_image": "//h2.appsimg.com/a.appsimg.com/upload/merchandise/pdc/318987688476110903/5b1a49cd-5238-42a2-9985-f74ac5880e31/91728862-6-5.jpg",
+                    "market_price": 369,
+                    "vip_discount": "4.8折",
+                    "vipshop_price": 178
+                },
+                {
+                    "brand_show_name": "安踏",
+                    "brand_store_logo": "//h2.appsimg.com/a.appsimg.com/upload/brandcool/0/c01f0d4e2f1143f185dce3b7f91811d4/10000269/primary.png",
+                    "product_id": 2149732201,
+                    "product_name": "透气排汗 女款运动长裤 综训系列",
+                    "small_image": "//h2.appsimg.com/a.appsimg.com/upload/merchandise/pdc/79171107345006653/7a42b7f1-892c-41a0-9121-62308da646a8/16747769-1-5.jpg",
+                    "market_price": 219,
+                    "vip_discount": "4.5折",
+                    "vipshop_price": 98
+                },
+                {
+                    "brand_show_name": "安踏",
+                    "brand_store_logo": "//h2.appsimg.com/a.appsimg.com/upload/brandcool/0/c01f0d4e2f1143f185dce3b7f91811d4/10000269/primary.png",
+                    "product_id": 2149732681,
+                    "product_name": "轻薄速干 女款运动长裤 跑步系列",
+                    "small_image": "//h2.appsimg.com/a.appsimg.com/upload/merchandise/pdc/79452582321717358/ef523147-036b-4298-8e84-4d50aee79c15/16735502-1-5.jpg",
+                    "market_price": 219,
+                    "vip_discount": "4.5折",
+                    "vipshop_price": 98
+                }
+            ]
         },
         {
             "brand_id": "3489862",
             "brand_name": "爱慕AIMER特卖旗舰店",
             "brand_show_name": "爱慕AIMER",
             "promotion_discount": "2.3 折起",
-            "brand_bg_logo": "https://h2.appsimg.com/b.appsimg.com/upload/mst/2018/09/14/125/993056aaa30582e19c8b6d03b1760e19.jpg!75.webp"
+            "brand_bg_logo": "https://h2.appsimg.com/b.appsimg.com/upload/mst/2018/09/14/125/993056aaa30582e19c8b6d03b1760e19.jpg!75.webp",
+            "products": [
+                {
+                    "brand_show_name": "爱慕AIMER",
+                    "brand_store_logo": "//h2.appsimg.com/a.appsimg.com/upload/brandcool/0/2c9c61227368462982b1e00a4b119a6e/10000256/primary.png",
+                    "product_id": 635614557,
+                    "product_name": "Aimer爱慕泡沫之夏无钢圈3/4连体无托中厚模杯前扣文胸",
+                    "small_image": "//h2.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/115713/2019/0130/77/42303f18-4950-479f-9cd3-e8ef4828c501_5t.jpg",
+                    "market_price": 420,
+                    "vip_discount": "4.7折",
+                    "vipshop_price": 199
+                },
+                {
+                    "brand_show_name": "爱慕AIMER",
+                    "brand_store_logo": "//h2.appsimg.com/a.appsimg.com/upload/brandcool/0/2c9c61227368462982b1e00a4b119a6e/10000256/primary.png",
+                    "product_id": 635598082,
+                    "product_name": "女款时尚光面性感3/4薄模杯聚拢文胸美背内衣",
+                    "small_image": "//h2.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/2019/02/16/148/7423c1e4-fd88-4dfa-9145-2077757724b5_5t.jpg",
+                    "market_price": 219,
+                    "vip_discount": "3.2折",
+                    "vipshop_price": 69
+                },
+                {
+                    "brand_show_name": "爱慕AIMER",
+                    "brand_store_logo": "//h2.appsimg.com/a.appsimg.com/upload/brandcool/0/2c9c61227368462982b1e00a4b119a6e/10000256/primary.png",
+                    "product_id": 635643096,
+                    "product_name": "Aimer爱慕女士内衣无痕光面精美花边3/4薄杯洞洞杯文胸",
+                    "small_image": "//h2.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/115713/2019/0222/133/be6ec21c-6b7e-4c8e-8d06-d624148cec14_5t.jpg",
+                    "market_price": 390,
+                    "vip_discount": "6.9折",
+                    "vipshop_price": 269
+                }
+            ]
         },
         {
-            "brand_id": "3603131",
-            "brand_name": "加一尚品COYEEE内衣特卖旗舰店",
-            "brand_show_name": "COYEEE",
+            "brand_id": "3489759",
+            "brand_name": "安莉芳Embryform内衣特卖旗舰店",
+            "brand_show_name": "安莉芳",
             "promotion_discount": "1.8 折起",
-            "brand_bg_logo": "https://h2.appsimg.com/b.appsimg.com/upload/mst/2018/12/14/184/eaeccc9d094dad606eff3eb7b8f491e3.jpg!75.webp"
+            "brand_bg_logo": "https://h2.appsimg.com/b.appsimg.com/upload/mst/2018/09/10/28/fb0920e89b6d972667ad6c5e1d69340f.gif",
+            "products": [
+                {
+                    "brand_show_name": "安莉芳",
+                    "brand_store_logo": "//h2.appsimg.com/a.appsimg.com/upload/brandcool/0/0380da4e7041407eb3c1c13ff4676ef9/10000264/primary.png",
+                    "product_id": 688183252,
+                    "product_name": "安莉芳秋衣薄款通透蕾丝打底衫圆领修身女士保暖内衣上衣ED0251",
+                    "small_image": "//h2.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/103613/2018/1019/41/57dbba15-a091-45e6-b052-e4f82951bae8_5t.jpg",
+                    "market_price": 539,
+                    "vip_discount": "6.3折",
+                    "vipshop_price": 339
+                },
+                {
+                    "brand_show_name": "安莉芳",
+                    "brand_store_logo": "//h2.appsimg.com/a.appsimg.com/upload/brandcool/0/0380da4e7041407eb3c1c13ff4676ef9/10000264/primary.png",
+                    "product_id": 688183246,
+                    "product_name": "安莉芳秋冬保暖裤修身连体打底袜裤高腰裤女士连腿袜裤EL7672",
+                    "small_image": "//h2.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/103613/2018/1019/7/7539e2d9-f172-45d5-9886-9a8898c73090_5t.jpg",
+                    "market_price": 499,
+                    "vip_discount": "5.4折",
+                    "vipshop_price": 269
+                },
+                {
+                    "brand_show_name": "安莉芳",
+                    "brand_store_logo": "//h2.appsimg.com/a.appsimg.com/upload/brandcool/0/0380da4e7041407eb3c1c13ff4676ef9/10000264/primary.png",
+                    "product_id": 688183249,
+                    "product_name": "安莉芳新品加厚珊瑚绒保暖舒适家居服女士睡衣睡裙EL7754",
+                    "small_image": "//h2.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/103613/2018/1019/158/d16c540f-39d0-4c00-843f-04fd2db6444f_5t.jpg",
+                    "market_price": 1998,
+                    "vip_discount": "5.0折",
+                    "vipshop_price": 999
+                },
+                {
+                    "brand_show_name": "安莉芳",
+                    "brand_store_logo": "//h2.appsimg.com/a.appsimg.com/upload/brandcool/0/0380da4e7041407eb3c1c13ff4676ef9/10000264/primary.png",
+                    "product_id": 688183255,
+                    "product_name": "安莉芳秋衣薄款通透蕾丝打底衫圆领修身女士保暖内衣上衣ED0251",
+                    "small_image": "//h2.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/103613/2018/1019/0/e06f8017-3497-43a4-9cf5-085962b2b765_5t.jpg",
+                    "market_price": 539,
+                    "vip_discount": "6.3折",
+                    "vipshop_price": 339
+                },
+                {
+                    "brand_show_name": "安莉芳",
+                    "brand_store_logo": "//h2.appsimg.com/a.appsimg.com/upload/brandcool/0/0380da4e7041407eb3c1c13ff4676ef9/10000264/primary.png",
+                    "product_id": 688183251,
+                    "product_name": "安莉芳秋冬新品蕾丝弹力打底衫薄款莫代尔修身女士保暖上衣ED0254",
+                    "small_image": "//h2.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/103613/2018/1019/6/9287817d-348e-4279-af16-8588ec9a6262_5t.jpg",
+                    "market_price": 539,
+                    "vip_discount": "6.3折",
+                    "vipshop_price": 339
+                },
+                {
+                    "brand_show_name": "安莉芳",
+                    "brand_store_logo": "//h2.appsimg.com/a.appsimg.com/upload/brandcool/0/0380da4e7041407eb3c1c13ff4676ef9/10000264/primary.png",
+                    "product_id": 688183260,
+                    "product_name": "安莉芳新品加厚珊瑚绒保暖舒适家居服女士睡衣睡裙EL7754",
+                    "small_image": "//h2.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/103613/2018/1019/139/9a226e61-aa5e-4945-b9f5-93f81df3422e_5t.jpg",
+                    "market_price": 1998,
+                    "vip_discount": "5.0折",
+                    "vipshop_price": 999
+                },
+                {
+                    "brand_show_name": "安莉芳",
+                    "brand_store_logo": "//h2.appsimg.com/a.appsimg.com/upload/brandcool/0/0380da4e7041407eb3c1c13ff4676ef9/10000264/primary.png",
+                    "product_id": 688183261,
+                    "product_name": "安莉芳秋冬新品蕾丝弹力打底衫薄款莫代尔修身女士保暖上衣ED0254",
+                    "small_image": "//h2.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/103613/2018/1019/38/912f8977-a84f-4d71-9c83-bc1ee86225e1_5t.jpg",
+                    "market_price": 539,
+                    "vip_discount": "6.3折",
+                    "vipshop_price": 339
+                },
+                {
+                    "brand_show_name": "安莉芳",
+                    "brand_store_logo": "//h2.appsimg.com/a.appsimg.com/upload/brandcool/0/0380da4e7041407eb3c1c13ff4676ef9/10000264/primary.png",
+                    "product_id": 688183257,
+                    "product_name": "安莉芳冬季新品长袖加厚珊瑚绒保暖睡衣家居服女士睡裙EL7689",
+                    "small_image": "//h2.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/103613/2018/1019/145/8c0f2987-69e9-4d82-acb9-c0631a9f138f_5t.jpg",
+                    "market_price": 899,
+                    "vip_discount": "5.6折",
+                    "vipshop_price": 499
+                }
+            ]
         },
         {
             "brand_id": "3603242",
@@ -105,18 +311,172 @@
             "brand_bg_logo": "https://h2.appsimg.com/b.appsimg.com/upload/mst/2018/12/18/47/cd74b558756d44f78c73035a8fafc2ca.jpg!75.webp"
         },
         {
-            "brand_id": "3489882",
-            "brand_name": "金利来goldlion女鞋特卖旗舰店",
-            "brand_show_name": "金利来",
+            "brand_id": "3479855",
+            "brand_name": "A02特卖旗舰店",
+            "brand_show_name": "A02",
             "promotion_discount": "3.4 折起",
-            "brand_bg_logo": "https://h2.appsimg.com/b.appsimg.com/upload/mst/2018/10/13/46/3ed9815c5d5c1d33a7493417f0bc193a.jpg!75.webp"
+            "brand_bg_logo": "https://h2.appsimg.com/b.appsimg.com/upload/mst/2018/11/30/0/63d026e28706d29ac17b6f3d95687fde.jpg!75.webp",
+            "products": [
+                {
+                    "brand_show_name": "a02",
+                    "brand_store_logo": "//h2.appsimg.com/a.appsimg.com/upload/brandcool/0/22d735b3b2e643a4a9004a6b016d40bc/10000012/primary.png",
+                    "product_id": 632877138,
+                    "product_name": "a02新款潮流时尚撞色牛仔拼接长袖韩版宽松卫衣女",
+                    "small_image": "http://h2.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/2018/08/24/58/81e6b069-21aa-462d-bedb-f17484f5ebdb_5t.jpg",
+                    "market_price": 599,
+                    "vip_discount": "4.1折",
+                    "vipshop_price": 243
+                },
+                {
+                    "brand_show_name": "a02",
+                    "brand_store_logo": "//h2.appsimg.com/a.appsimg.com/upload/brandcool/0/22d735b3b2e643a4a9004a6b016d40bc/10000012/primary.png",
+                    "product_id": 700615482,
+                    "product_name": "a02新款减龄少女萌趣印花宽松显瘦套头卫衣chic女",
+                    "small_image": "//h2.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/2018/11/08/22/ccd61cf5-e0dd-4504-88f8-3469842b3837_5t.jpg",
+                    "market_price": 499,
+                    "vip_discount": "4.4折",
+                    "vipshop_price": 218
+                },
+                {
+                    "brand_show_name": "a02",
+                    "brand_store_logo": "//h2.appsimg.com/a.appsimg.com/upload/brandcool/0/22d735b3b2e643a4a9004a6b016d40bc/10000012/primary.png",
+                    "product_id": 2156889970,
+                    "product_name": "a02新款2019春款潮流港风简约刺绣宽松连帽夹克女",
+                    "small_image": "//h2.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/2019/02/18/121/e11d674d-e2e6-42b9-a8c7-24bf91d2654e_5t.jpg",
+                    "market_price": 899,
+                    "vip_discount": "4.1折",
+                    "vipshop_price": 368
+                },
+                {
+                    "brand_show_name": "a02",
+                    "brand_store_logo": "//h2.appsimg.com/a.appsimg.com/upload/brandcool/0/22d735b3b2e643a4a9004a6b016d40bc/10000012/primary.png",
+                    "product_id": 632877955,
+                    "product_name": "a02少女风条纹两件套毛边牛仔背心裙",
+                    "small_image": "//h2.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/2018/07/26/121/099026b4-3b1c-464a-8713-c4f06c1e7565_5t.jpg",
+                    "market_price": 798,
+                    "vip_discount": "3折",
+                    "vipshop_price": 238
+                },
+                {
+                    "brand_show_name": "a02",
+                    "brand_store_logo": "//h2.appsimg.com/a.appsimg.com/upload/brandcool/0/22d735b3b2e643a4a9004a6b016d40bc/10000012/primary.png",
+                    "product_id": 648191370,
+                    "product_name": "a02新款韩版宽松毛绒保暖连帽宽松长袖卫衣女",
+                    "small_image": "//h2.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/2018/09/06/156/cd61a1be-19ed-43d9-af79-0258d5d2d49d_5t.jpg",
+                    "market_price": 599,
+                    "vip_discount": "2.1折",
+                    "vipshop_price": 128
+                },
+                {
+                    "brand_show_name": "a02",
+                    "brand_store_logo": "//h2.appsimg.com/a.appsimg.com/upload/brandcool/0/22d735b3b2e643a4a9004a6b016d40bc/10000012/primary.png",
+                    "product_id": 632878192,
+                    "product_name": "a02新款春秋薄款印花连帽宽松显瘦长袖卫衣女潮",
+                    "small_image": "//h2.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/2018/07/25/17/f857edca-809c-48b0-a905-2b7c5c182ee0_5t.jpg",
+                    "market_price": 439,
+                    "vip_discount": "2.7折",
+                    "vipshop_price": 118
+                },
+                {
+                    "brand_show_name": "a02",
+                    "brand_store_logo": "//h2.appsimg.com/a.appsimg.com/upload/brandcool/0/22d735b3b2e643a4a9004a6b016d40bc/10000012/primary.png",
+                    "product_id": 632877138,
+                    "product_name": "a02新款潮流时尚撞色牛仔拼接长袖韩版宽松卫衣女",
+                    "small_image": "//h2.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/2018/08/24/58/81e6b069-21aa-462d-bedb-f17484f5ebdb_5t.jpg",
+                    "market_price": 599,
+                    "vip_discount": "4.1折",
+                    "vipshop_price": 243
+                },
+                {
+                    "brand_show_name": "a02",
+                    "brand_store_logo": "//h2.appsimg.com/a.appsimg.com/upload/brandcool/0/22d735b3b2e643a4a9004a6b016d40bc/10000012/primary.png",
+                    "product_id": 632878182,
+                    "product_name": "a02新款春秋韩版印花短款薄连帽宽松长袖卫衣女",
+                    "small_image": "//h2.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/2018/07/27/5/f4012f41-3442-4af8-9341-f45a51c1a1cb_5t.jpg",
+                    "market_price": 469,
+                    "vip_discount": "2.5折",
+                    "vipshop_price": 118
+                },
+                {
+                    "brand_show_name": "a02",
+                    "brand_store_logo": "//h2.appsimg.com/a.appsimg.com/upload/brandcool/0/22d735b3b2e643a4a9004a6b016d40bc/10000012/primary.png",
+                    "product_id": 632877769,
+                    "product_name": "A.PLUS休闲简约字母刺绣连帽外套女",
+                    "small_image": "//h2.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/2018/07/26/138/225752a1-22c7-4250-88a2-7b9350116abc_5t.jpg",
+                    "market_price": 698,
+                    "vip_discount": "2.2折",
+                    "vipshop_price": 155
+                }
+            ]
         },
         {
-            "brand_id": "3696198",
-            "brand_name": "芭比Barbie女鞋特卖旗舰店",
-            "brand_show_name": "芭比Barbie",
+            "brand_id": "3574150",
+            "brand_name": "NBA特卖旗舰店",
+            "brand_show_name": "NBA",
             "promotion_discount": "2.6 折起",
-            "brand_bg_logo": "https://h2.appsimg.com/b.appsimg.com/upload/mst/2018/11/02/58/4387571fb18260f8a4897d3f5abfbd3f.jpg!75.webp"
+            "brand_bg_logo": "https://h2.appsimg.com/b.appsimg.com/upload/mst/2018/09/25/86/17a9800fefe1c861d89aa7f7daa103be.jpg!75.webp",
+            "products": [
+                {
+                    "brand_show_name": "NBA",
+                    "brand_store_logo": "//h2.appsimg.com/a.appsimg.com/upload/brandcool/0/590d45f191da45b0b39f5eedda7f2386/10000148/primary.png",
+                    "product_id": 660225833,
+                    "product_name": "NBA 时尚休闲 男女适用双肩包书包背包",
+                    "small_image": "//h2.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/2018/05/18/46/188a8d31-4f40-481d-bc8e-823a47adcbe8.jpg",
+                    "market_price": 259,
+                    "vip_discount": "3.4折",
+                    "vipshop_price": 89
+                },
+                {
+                    "brand_show_name": "NBA",
+                    "brand_store_logo": "//h2.appsimg.com/a.appsimg.com/upload/brandcool/0/590d45f191da45b0b39f5eedda7f2386/10000148/primary.png",
+                    "product_id": 658800537,
+                    "product_name": "NBA 轻盈编织 女款篮球鞋",
+                    "small_image": "//h2.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/2018/05/18/177/bc1dfc71-700e-4409-a731-459fad4bc6c1.jpg",
+                    "market_price": 399,
+                    "vip_discount": "3.2折",
+                    "vipshop_price": 127
+                },
+                {
+                    "brand_show_name": "NBA",
+                    "brand_store_logo": "//h2.appsimg.com/a.appsimg.com/upload/brandcool/0/590d45f191da45b0b39f5eedda7f2386/10000148/primary.png",
+                    "product_id": 658800493,
+                    "product_name": "NBA 耐磨透气 女款运动鞋",
+                    "small_image": "//h2.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/2018/05/18/142/4c292637-4393-4e0b-a150-6e142f71c845.jpg",
+                    "market_price": 369,
+                    "vip_discount": "3.5折",
+                    "vipshop_price": 128
+                },
+                {
+                    "brand_show_name": "NBA",
+                    "brand_store_logo": "//h2.appsimg.com/a.appsimg.com/upload/brandcool/0/590d45f191da45b0b39f5eedda7f2386/10000148/primary.png",
+                    "product_id": 660225937,
+                    "product_name": "NBA 耐磨舒适高帮 男款篮球鞋男运动鞋",
+                    "small_image": "//h2.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/2018/12/05/39/ccdec583-e948-4d99-94d8-03c446d7818c_5t.jpg",
+                    "market_price": 399,
+                    "vip_discount": "5折",
+                    "vipshop_price": 198
+                },
+                {
+                    "brand_show_name": "NBA",
+                    "brand_store_logo": "//h2.appsimg.com/a.appsimg.com/upload/brandcool/0/590d45f191da45b0b39f5eedda7f2386/10000148/primary.png",
+                    "product_id": 658800189,
+                    "product_name": "NBA 轻便透气 男款缓震耐磨高帮篮球鞋",
+                    "small_image": "//h2.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/2018/05/17/91/7d771d21-ccf3-4a39-9ae6-d7410eff83f2.jpg",
+                    "market_price": 469,
+                    "vip_discount": "5.7折",
+                    "vipshop_price": 268
+                },
+                {
+                    "brand_show_name": "NBA",
+                    "brand_store_logo": "//h2.appsimg.com/a.appsimg.com/upload/brandcool/0/590d45f191da45b0b39f5eedda7f2386/10000148/primary.png",
+                    "product_id": 658800435,
+                    "product_name": "NBA 透气高帮百搭耐磨缓震 男款篮球鞋男运动鞋",
+                    "small_image": "//h2.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/2018/01/30/39/ba8c41f0-31b7-40ed-8d04-5fed126a39b6_t.jpg",
+                    "market_price": 499,
+                    "vip_discount": "4.4折",
+                    "vipshop_price": 219
+                }
+            ]
         },
         {
             "brand_id": "2223844",
@@ -130,7 +490,69 @@
             "brand_name": "玉兰油OLAY特卖旗舰店",
             "brand_show_name": "玉兰油OLAY",
             "promotion_discount": "7.8 折起",
-            "brand_bg_logo": "https://h2.appsimg.com/b.appsimg.com/upload/mst/2019/01/24/139/e3350fb66e7c0d549311ff3ad834edca.jpg!75.webp"
+            "brand_bg_logo": "https://h2.appsimg.com/b.appsimg.com/upload/mst/2019/01/24/139/e3350fb66e7c0d549311ff3ad834edca.jpg!75.webp",
+            "products":[
+                {
+                    "brand_show_name": "玉兰油",
+                    "brand_store_logo": "//h2.appsimg.com/a.appsimg.com/upload/brandcool/0/c2758b1a1d40486d945fb9bba87b5b3a/10000828/primary.png",
+                    "product_id": 718771631,
+                    "product_name": "玉兰油OLAY 水感透白光塑精华30ml光感小白瓶补水美白",
+                    "small_image": "//h2.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/105209/2019/0124/7/62e21fd9-457d-4f52-a94d-b1825c7717cf_5t.jpg",
+                    "market_price": 280,
+                    "vip_discount": "7.8折",
+                    "vipshop_price": 219
+                },
+                {
+                    "brand_show_name": "玉兰油",
+                    "brand_store_logo": "//h2.appsimg.com/a.appsimg.com/upload/brandcool/0/c2758b1a1d40486d945fb9bba87b5b3a/10000828/primary.png",
+                    "product_id": 718771611,
+                    "product_name": "玉兰油OLAY 新生经典面霜水眼霜套装  补水保湿 提拉紧致 淡化细纹",
+                    "small_image": "//h2.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/105209/2018/0605/123/5361980c-93ef-40f1-907d-531f324e38d3_5t.jpg",
+                    "market_price": 1126,
+                    "vip_discount": "5.1折",
+                    "vipshop_price": 569
+                },
+                {
+                    "brand_show_name": "玉兰油",
+                    "brand_store_logo": "//h2.appsimg.com/a.appsimg.com/upload/brandcool/0/c2758b1a1d40486d945fb9bba87b5b3a/10000828/primary.png",
+                    "product_id": 718771556,
+                    "product_name": "玉兰油OLAY亮洁晳颜祛斑精华液40ml 美白保湿精华",
+                    "small_image": "//h2.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/105209/2018/1113/71/1bf281b3-9f3f-4243-8584-fe24b90c8252_5t.jpg",
+                    "market_price": 390,
+                    "vip_discount": "7.7折",
+                    "vipshop_price": 299
+                },
+                {
+                    "brand_show_name": "玉兰油",
+                    "brand_store_logo": "//h2.appsimg.com/a.appsimg.com/upload/brandcool/0/c2758b1a1d40486d945fb9bba87b5b3a/10000828/primary.png",
+                    "product_id": 718771610,
+                    "product_name": "玉兰油OLAY 新生塑颜金纯活能水250ml 买赠礼盒 补水",
+                    "small_image": "//h2.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/105209/2019/0122/13/7b0f8c00-6cab-46aa-9da7-acc15924d520_5t.jpg",
+                    "market_price": 490,
+                    "vip_discount": "5.1折",
+                    "vipshop_price": 249
+                },
+                {
+                    "brand_show_name": "玉兰油",
+                    "brand_store_logo": "//h2.appsimg.com/a.appsimg.com/upload/brandcool/0/c2758b1a1d40486d945fb9bba87b5b3a/10000828/primary.png",
+                    "product_id": 718771547,
+                    "product_name": "玉兰油OLAY 多效修护3件套礼盒 补水保湿提亮肤色淡化细纹",
+                    "small_image": "//h2.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/105209/2019/0124/129/de28e0cb-050a-4a94-9588-57f80d52a988_5t.jpg",
+                    "market_price": 424,
+                    "vip_discount": "6.1折",
+                    "vipshop_price": 258
+                },
+                {
+                    "brand_show_name": "玉兰油",
+                    "brand_store_logo": "//h2.appsimg.com/a.appsimg.com/upload/brandcool/0/c2758b1a1d40486d945fb9bba87b5b3a/10000828/primary.png",
+                    "product_id": 718771727,
+                    "product_name": "玉兰油OLAY 新生塑颜空气感凝霜50g  面霜 保湿紧致",
+                    "small_image": "//h2.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/2018/04/12/98/414ac4f7722c412fb622c832d4ece6c4-5.jpg",
+                    "market_price": 400,
+                    "vip_discount": "6折",
+                    "vipshop_price": 239
+                }
+            ]
         }
     ]
 }
