@@ -1,4 +1,4 @@
-# vue-music-follow
+# vue-vipshop
 
 > 音乐app
 
