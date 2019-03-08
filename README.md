@@ -1,6 +1,7 @@
 # vue-vipshop
 
 > 音乐app
+项目演示地址：http://182.254.190.184:9002/#/recommend
 
 ## Build Setup
 
