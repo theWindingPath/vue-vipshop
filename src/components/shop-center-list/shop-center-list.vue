@@ -83,7 +83,8 @@ export default {
                       overflow hidden
                       text-overflow ellipsis
                       -webkit-box-orient vertical
-                      -webkit-line-clamp: 2
+                      // box-orient vertical
+                      -webkit-line-clamp 2
                     .brand-name
                       line-height 12px
                       color #999
