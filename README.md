@@ -1,6 +1,7 @@
 # vue-vipshop
 
-> 音乐app
+> vue2.0唯品会购物Web App
+
 项目演示地址：http://182.254.190.184:9002/#/recommend
 
 ## Build Setup
