@@ -1,6 +1,6 @@
-# vue-music-follow
+# vue-vipshop
 
-> 音乐app
+> vue2.0唯品会购物Web App
 
 ## Build Setup
 

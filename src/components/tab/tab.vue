@@ -8,7 +8,7 @@
         <span class="tab-link">分类</span>
       </router-link>
       <router-link tag="div" to="/rank" class="tab-item">
-        <span class="tab-link">旗舰店</span>
+        <span class="tab-link">新品上线</span>
       </router-link>
       <router-link tag="div" to="/search" class="tab-item">
         <span class="tab-link">搜索</span>
